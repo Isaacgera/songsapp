@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:songsapp/models/song.dart';
 
-class AlbumCard extends StatelessWidget {
-  final String title;
-  final int count;
-  const AlbumCard({super.key, required this.title, required this.count});
+class SongCard extends StatelessWidget {
+  const SongCard({super.key, required this.song});
+
+  final Song song;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,9 @@ class AlbumCard extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(6)),
               ),
-              child: Image.asset('imgs/albumtmb.png'),
+              child: Image.asset(
+                'imgs/songtmb.jpg',
+              ),
             ),
             Container(
               margin: const EdgeInsets.only(left: 12),
@@ -33,16 +36,20 @@ class AlbumCard extends StatelessWidget {
                   const SizedBox(
                     height: 12,
                   ),
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontSize: 20,
+                  SizedBox(
+                    width: 180,
+                    child: Text(
+                      overflow: TextOverflow.ellipsis,
+                      song.title,
+                      style: const TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
                   ),
-                  Text(
-                    "$count Songs",
+                  const Text(
+                    "Duration.",
                     textAlign: TextAlign.left,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 12,
                     ),
                   ),

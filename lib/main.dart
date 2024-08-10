@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:songsapp/screens/home.dart';
-import 'package:songsapp/screens/splash.dart';
 
 void main() {
   runApp(const MyApp());

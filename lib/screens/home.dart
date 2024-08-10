@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:songsapp/widgets/albumcard.dart';
+import 'package:songsapp/engine.dart';
+import 'package:songsapp/models/album.dart';
+import 'package:songsapp/screens/albumscreen.dart';
+import 'package:songsapp/screens/bookscreen.dart';
+import 'package:songsapp/screens/searchscreen.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -10,40 +13,20 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Widget getAlbumPage() {
-    return ListView.builder(
-      padding: const EdgeInsets.only(top: 10),
-      physics: const BouncingScrollPhysics(),
-      itemCount: 15,
-      itemBuilder: (context, index) => const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        child: AlbumCard(),
-      ),
-    );
-  }
-
-  Widget getSearchPage() {
-    return const Center(
-      child: Text("Search"),
-    );
-  }
-
-  Widget getBookPage() {
-    return const Center(
-      child: Text("Book"),
-    );
-  }
-
   int selectedIndex = 0;
   List<Widget> pages = [];
+
+  //Engion
+  Engine eng = Engine();
+  late List<Album> albums = eng.getAlbums();
 
   @override
   void initState() {
     super.initState();
     pages = [
-      getAlbumPage(),
-      getSearchPage(),
-      getBookPage(),
+      AlbumPage(albums: albums),
+      const SearchPage(),
+      const BookPage(),
     ];
   }
 
