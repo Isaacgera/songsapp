@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:songsapp/models/album.dart';
 import 'package:songsapp/screens/songscreen.dart';
 import 'package:songsapp/widgets/albumcard.dart';
@@ -15,6 +16,16 @@ class _AlbumPageState extends State<AlbumPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Albums",
+          style: GoogleFonts.inconsolata(
+            fontSize: 28,
+          ),
+        ),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+      ),
       body: ListView.builder(
         padding: const EdgeInsets.only(top: 10),
         physics: const BouncingScrollPhysics(),
@@ -26,8 +37,10 @@ class _AlbumPageState extends State<AlbumPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) =>
-                        SongsPage(songs: widget.albums[index].songs)),
+                    builder: (context) => SongsPage(
+                          songs: widget.albums[index].songs,
+                          title: widget.albums[index].title,
+                        )),
               );
             },
             child: AlbumCard(

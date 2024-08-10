@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:songsapp/models/song.dart';
 
-class BookPage extends StatelessWidget {
-  const BookPage({super.key});
+class SongFullPage extends StatefulWidget {
+  const SongFullPage({super.key, required this.song});
+  final Song song;
 
+  @override
+  State<SongFullPage> createState() => _SongFullPageState();
+}
+
+class _SongFullPageState extends State<SongFullPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Books",
+          "Song Title",
           style: GoogleFonts.inconsolata(
             fontSize: 28,
           ),
@@ -17,7 +24,7 @@ class BookPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
-      body: Center(child: Text("Books")),
+      body: Center(child: Text("Songfull screen")),
     );
   }
 }

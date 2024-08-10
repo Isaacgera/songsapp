@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AlbumCard extends StatelessWidget {
   final String title;
@@ -35,14 +36,14 @@ class AlbumCard extends StatelessWidget {
                   ),
                   Text(
                     title,
-                    style: const TextStyle(
+                    style: GoogleFonts.inconsolata(
                       fontSize: 20,
                     ),
                   ),
                   Text(
                     "$count Songs",
                     textAlign: TextAlign.left,
-                    style: const TextStyle(
+                    style: GoogleFonts.inconsolata(
                       fontSize: 12,
                     ),
                   ),

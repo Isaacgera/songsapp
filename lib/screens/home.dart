@@ -4,6 +4,8 @@ import 'package:songsapp/models/album.dart';
 import 'package:songsapp/screens/albumscreen.dart';
 import 'package:songsapp/screens/bookscreen.dart';
 import 'package:songsapp/screens/searchscreen.dart';
+import 'package:songsapp/screens/songscreen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -46,7 +48,7 @@ class _HomeState extends State<Home> {
         child: pages[selectedIndex],
       ),
       bottomNavigationBar: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.symmetric(vertical: 12),
         color: Colors.black26,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

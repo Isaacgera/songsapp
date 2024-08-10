@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BookPage extends StatelessWidget {
-  const BookPage({super.key});
+class LyricsPage extends StatelessWidget {
+  const LyricsPage({super.key, required this.lyrics});
+
+  final String lyrics;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Books",
+          "Song title",
           style: GoogleFonts.inconsolata(
             fontSize: 28,
           ),
@@ -17,7 +19,7 @@ class BookPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
-      body: Center(child: Text("Books")),
+      body: Center(child: Text(lyrics == "none" ? "Coming Soon" : "lyrics")),
     );
   }
 }
