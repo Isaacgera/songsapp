@@ -4,6 +4,7 @@ import 'package:songsapp/models/album.dart';
 import 'package:songsapp/screens/albumscreen.dart';
 import 'package:songsapp/screens/bookscreen.dart';
 import 'package:songsapp/screens/searchscreen.dart';
+import 'package:songsapp/screens/songfullscreen.dart';
 import 'package:songsapp/screens/songscreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,6 +27,8 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     pages = [
+      //remove later
+      SongFullPage(song: albums[0].songs[0]),
       AlbumPage(albums: albums),
       const SearchPage(),
       const BookPage(),

@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:songsapp/widgets/lyricscard.dart';
 
 class LyricsPage extends StatelessWidget {
-  const LyricsPage({super.key, required this.lyrics});
+  const LyricsPage({super.key, required this.title, required this.lyricsPath});
 
-  final String lyrics;
+  final String lyricsPath;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Song title",
+          title,
           style: GoogleFonts.inconsolata(
             fontSize: 28,
           ),
@@ -19,7 +21,8 @@ class LyricsPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
-      body: Center(child: Text(lyrics == "none" ? "Coming Soon" : "lyrics")),
+      body: SingleChildScrollView(
+          child: Center(child: LyricsCard(lyricsPath: lyricsPath))),
     );
   }
 }

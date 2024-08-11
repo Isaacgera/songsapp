@@ -17,7 +17,7 @@ class SearchPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
-      body: Center(child: Text("Search")),
+      body: const Center(child: Text("Search : Comming Soon")),
     );
   }
 }

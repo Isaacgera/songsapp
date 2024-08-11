@@ -17,7 +17,7 @@ class BookPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
-      body: Center(child: Text("Books")),
+      body: const Center(child: Text("Books : Comming Soon")),
     );
   }
 }
