@@ -86,7 +86,6 @@ class _SongCardState extends State<SongCard> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => LyricsPage(
-                                title: widget.song.title,
                                 lyricsPath: widget.song.lyricspath)));
                   },
                   child: Opacity(

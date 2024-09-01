@@ -16,7 +16,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int selectedIndex = 0;
+  int selectedIndex = 1;
   List<Widget> pages = [];
 
   //Engion
@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
     super.initState();
     pages = [
       //remove later
-      SongFullPage(song: albums[0].songs[0]),
+      // SongFullPage(song: albums[0].songs[0]),
       AlbumPage(albums: albums),
       const SearchPage(),
       const BookPage(),

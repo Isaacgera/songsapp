@@ -21,6 +21,7 @@ class _AlbumPageState extends State<AlbumPage> {
           "Albums",
           style: GoogleFonts.inconsolata(
             fontSize: 28,
+            // fontWeight: FontWeight.w500,
           ),
         ),
         centerTitle: true,
@@ -39,7 +40,6 @@ class _AlbumPageState extends State<AlbumPage> {
                 MaterialPageRoute(
                     builder: (context) => SongsPage(
                           songs: widget.albums[index].songs,
-                          title: widget.albums[index].title,
                         )),
               );
             },

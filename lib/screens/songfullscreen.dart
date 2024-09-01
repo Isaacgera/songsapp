@@ -17,7 +17,7 @@ class _SongFullPageState extends State<SongFullPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          widget.song.title,
+          "Song",
           style: GoogleFonts.inconsolata(
               fontSize: 28, fontWeight: FontWeight.w400),
         ),

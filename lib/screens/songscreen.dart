@@ -4,9 +4,8 @@ import 'package:songsapp/models/song.dart';
 import 'package:songsapp/widgets/songcard.dart';
 
 class SongsPage extends StatefulWidget {
-  const SongsPage({super.key, required this.songs, required this.title});
+  const SongsPage({super.key, required this.songs});
   final List<Song> songs;
-  final String title;
 
   @override
   State<SongsPage> createState() => _SongsPageState();
@@ -18,7 +17,7 @@ class _SongsPageState extends State<SongsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          widget.title,
+          "Songs",
           style: GoogleFonts.inconsolata(
             fontSize: 28,
           ),
