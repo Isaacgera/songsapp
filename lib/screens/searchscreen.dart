@@ -86,7 +86,7 @@ class _SearchPageState extends State<SearchPage> {
               builder: (context, opacity, child) {
                 return AnimatedOpacity(
                   opacity: opacity,
-                  duration: const Duration(milliseconds: 350),
+                  duration: const Duration(milliseconds: 500),
                   child: child,
                 );
               },

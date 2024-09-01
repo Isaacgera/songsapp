@@ -56,7 +56,7 @@ class _SongCardState extends State<SongCard> {
                         height: 12,
                       ),
                       SizedBox(
-                        width: 150,
+                        width: 160,
                         child: Text(
                           overflow: TextOverflow.ellipsis,
                           widget.song.title,
@@ -65,11 +65,14 @@ class _SongCardState extends State<SongCard> {
                           ),
                         ),
                       ),
-                      Text(
-                        "Duration.",
-                        textAlign: TextAlign.left,
-                        style: GoogleFonts.inconsolata(
-                          fontSize: 12,
+                      Transform(
+                        transform: Matrix4.translationValues(0, -4, 0),
+                        child: Text(
+                          "Duration.",
+                          textAlign: TextAlign.left,
+                          style: GoogleFonts.inconsolata(
+                            fontSize: 12,
+                          ),
                         ),
                       ),
                     ],

@@ -16,7 +16,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int selectedIndex = 1;
+  int selectedIndex = 0;
   List<Widget> pages = [];
 
   //Engion
