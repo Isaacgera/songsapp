@@ -22,42 +22,42 @@ class SongsProvider {
     audiopath: "album1/1.mp3",
     lyricspath: "lyrics/a1_comentry.txt",
   );
-  //null
-  final Song a1_song2 = const Song(
+  //26
+  late Song a1_song2 = const Song(
     title: "Goppadevudu",
     subtitle: "గొప్పదేవుడు",
     audiopath: "album1/2.mp3",
     lyricspath: "lyrics/1.txt",
   );
-  //null
+  //34
   final Song a1_song3 = const Song(
     title: "Yesayyanahrudayamu",
     subtitle: "యేసయ్యనహృదయము",
     audiopath: "album1/3.mp3",
     lyricspath: "lyrics/2.txt",
   );
-  //null
+  //18
   final Song a1_song4 = const Song(
     title: "Ysuprabhunisiluva",
     subtitle: "యేసుప్రభునిశిలువ",
     audiopath: "album1/4.mp3",
     lyricspath: "lyrics/3.txt",
   );
-  //null
+  //17
   final Song a1_song5 = const Song(
     title: "Andakara",
     subtitle: "అందకార",
     audiopath: "album1/5.mp3",
     lyricspath: "lyrics/4.txt",
   );
-  //null
+  //27
   final Song a1_song6 = const Song(
     title: "Ssthuthiganamulu",
     subtitle: "స్తుతిగణములు",
     audiopath: "album1/6.mp3",
     lyricspath: "lyrics/5.txt",
   );
-  //null
+  //24
   final Song a1_song7 = const Song(
     title: "Errani yesuraktham",
     subtitle: "ఎర్రని యేసురక్తం",
@@ -71,7 +71,7 @@ class SongsProvider {
     audiopath: "album1/8.mp3",
     lyricspath: "lyrics/7.txt",
   );
-  //null
+  //29
   final Song a1_song9 = const Song(
     title: "Naasraya durgama",
     subtitle: "నాశ్రయ దుర్గమా",
@@ -114,21 +114,21 @@ class SongsProvider {
     audiopath: "album2/3.mp3",
     lyricspath: "none",
   );
-  //58
+  //5
   final Song a2_song4 = const Song(
     title: "Ysukreesthu prabhuvu",
     subtitle: "యేసుక్రీస్తు ప్రభువు",
     audiopath: "album2/4.mp3",
     lyricspath: "none",
   );
-  //null
+  //31
   final Song a2_song5 = const Song(
     title: "Nabadaloadarana",
     subtitle: "నబడలోదరన",
     audiopath: "album2/5.mp3",
     lyricspath: "none",
   );
-  //null
+  //6
   final Song a2_song6 = const Song(
     title: "Yesurakthamu karchi",
     subtitle: "యేసురక్తము కార్చి",
