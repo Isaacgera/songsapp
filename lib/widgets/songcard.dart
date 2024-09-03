@@ -41,8 +41,8 @@ class _SongCardState extends State<SongCard> {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(6)),
               ),
-              child: Image.asset(
-                'imgs/songtmb.jpg',
+              child: const Image(
+                image: AssetImage('assets/imgs/songtmb.jpg'),
               ),
             ),
             Expanded(
@@ -92,13 +92,15 @@ class _SongCardState extends State<SongCard> {
                                   title: widget.song.title,
                                   lyricsPath: widget.song.lyricspath)));
                     },
-                    child: Opacity(
-                      opacity: 0.5,
-                      child: Image.asset(
-                        'icons/paper.png',
-                        scale: 7,
-                      ),
-                    ),
+                    child: const Opacity(
+                        opacity: 0.5,
+                        child: Image(
+                          image: AssetImage('assets/icons/paper.png'),
+                          width:
+                              4 * 10, // multiply by 10 to scale up by 7 times
+                          height:
+                              4 * 10, // multiply by 10 to scale up by 7 times
+                        )),
                   ),
                   GestureDetector(
                     onTap: () {

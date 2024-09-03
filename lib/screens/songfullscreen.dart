@@ -48,9 +48,11 @@ class _SongFullPageState extends State<SongFullPage> {
                       decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.all(Radius.circular(10))),
-                      child: Image.asset(
-                        "imgs/songmain.png",
-                        scale: 0.6,
+                      // "imgs/songmain.png",
+                      child: const Image(
+                        image: AssetImage('assets/imgs/songmain.png'),
+                        width: 300,
+                        height: 300,
                       ),
                     ),
                     Container(
@@ -84,77 +86,89 @@ class _SongFullPageState extends State<SongFullPage> {
                 height: 10,
               ),
 
-              //slider
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: SliderTheme(
-                  data: SliderTheme.of(context).copyWith(
-                      thumbShape: const RoundSliderThumbShape(
-                    enabledThumbRadius: 6,
-                    pressedElevation: 8,
-                    disabledThumbRadius: 6,
-                  )),
-                  child: Slider(
-                    min: 0,
-                    max: 100,
-                    value: 50,
-                    thumbColor: Colors.black87,
-                    activeColor: Colors.black45,
-                    onChanged: (double value) {
-                      print("Slider changed");
-                    },
-                  ),
-                ),
-              ),
-              Transform.translate(
-                offset: const Offset(0, -15),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 32),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "00:00",
-                        style: GoogleFonts.inconsolata(
-                          fontSize: 14,
-                        ),
-                      ),
-                      Text(
-                        "05:00",
-                        style: GoogleFonts.inconsolata(
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              //contoles
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //Row for controllers
+              SizedBox(
+                width: 700,
+                child: Column(
+                  // mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.shuffle_rounded, size: 50)),
-                    IconButton(
-                        onPressed: () {},
-                        icon:
-                            const Icon(Icons.skip_previous_rounded, size: 50)),
-                    IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.pause_outlined, size: 50)),
-                    IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.skip_next_rounded, size: 50)),
-                    IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.repeat_rounded, size: 50))
+                    //slider
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: SliderTheme(
+                        data: SliderTheme.of(context).copyWith(
+                            thumbShape: const RoundSliderThumbShape(
+                          enabledThumbRadius: 6,
+                          pressedElevation: 8,
+                          disabledThumbRadius: 6,
+                        )),
+                        child: Slider(
+                          min: 0,
+                          max: 100,
+                          value: 50,
+                          thumbColor: Colors.black87,
+                          activeColor: Colors.black45,
+                          onChanged: (double value) {
+                            print("Slider changed");
+                          },
+                        ),
+                      ),
+                    ),
+                    Transform.translate(
+                      offset: const Offset(0, -15),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 32),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "00:00",
+                              style: GoogleFonts.inconsolata(
+                                fontSize: 14,
+                              ),
+                            ),
+                            Text(
+                              "05:00",
+                              style: GoogleFonts.inconsolata(
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    //contoles
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          IconButton(
+                              onPressed: () {},
+                              icon:
+                                  const Icon(Icons.shuffle_rounded, size: 50)),
+                          IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.skip_previous_rounded,
+                                  size: 50)),
+                          IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.pause_outlined, size: 50)),
+                          IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.skip_next_rounded,
+                                  size: 50)),
+                          IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.repeat_rounded, size: 50))
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
+
               //Lyrics
 
               LyricsCard(

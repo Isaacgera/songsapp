@@ -70,12 +70,12 @@ class _HomeState extends State<Home> {
                   updatePage();
                 },
                 child: Opacity(
-                  opacity: getOpacity(0),
-                  child: Image.asset(
-                    'icons/albumbar.png',
-                    scale: 7.5,
-                  ),
-                ),
+                    opacity: getOpacity(0),
+                    child: const Image(
+                      image: AssetImage('assets/icons/albumbar.png'),
+                      width: 4 * 10, // multiply by 10 to scale up by 7 times
+                      height: 4 * 10, // multiply by 10 to scale up by 7 times
+                    )),
               ),
               GestureDetector(
                 onTap: () {
@@ -83,12 +83,12 @@ class _HomeState extends State<Home> {
                   updatePage();
                 },
                 child: Opacity(
-                  opacity: getOpacity(1),
-                  child: Image.asset(
-                    'icons/searchbar.png',
-                    scale: 7.5,
-                  ),
-                ),
+                    opacity: getOpacity(1),
+                    child: const Image(
+                      image: AssetImage('assets/icons/searchbar.png'),
+                      width: 4 * 10, // multiply by 10 to scale up by 7 times
+                      height: 4 * 10, // multiply by 10 to scale up by 7 times
+                    )),
               ),
               GestureDetector(
                 onTap: () {
@@ -96,12 +96,12 @@ class _HomeState extends State<Home> {
                   updatePage();
                 },
                 child: Opacity(
-                  opacity: getOpacity(2),
-                  child: Image.asset(
-                    'icons/bookbar.png',
-                    scale: 7.5,
-                  ),
-                ),
+                    opacity: getOpacity(2),
+                    child: const Image(
+                      image: AssetImage('assets/icons/bookbar.png'),
+                      width: 4 * 10, // multiply by 10 to scale up by 7 times
+                      height: 4 * 10, // multiply by 10 to scale up by 7 times
+                    )),
               ),
             ],
           ),

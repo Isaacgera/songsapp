@@ -24,7 +24,9 @@ class AlbumCard extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(6)),
               ),
-              child: Image.asset('imgs/albumtmb.png'),
+              child: const Image(
+                image: AssetImage('assets/imgs/albumtmb.png'),
+              ),
             ),
             Container(
               margin: const EdgeInsets.only(left: 12),

@@ -25,8 +25,11 @@ class BookCard extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(6)),
               ),
               child: ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
-                  child: Image.asset('imgs/booktmb.jpg')),
+                borderRadius: BorderRadius.circular(4),
+                child: const Image(
+                  image: AssetImage('assets/imgs/booktmb.jpg'),
+                ),
+              ),
             ),
             Expanded(
               child: Container(
