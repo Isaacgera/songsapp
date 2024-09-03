@@ -15,6 +15,7 @@ class BookPage extends StatefulWidget {
 class _BookPageState extends State<BookPage> {
   final BooksProvider _booksProvider = BooksProvider();
   late List<Book> books = _booksProvider.getAllBooks();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +42,7 @@ class _BookPageState extends State<BookPage> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => LyricsPage(
+                                    title: books[index].title,
                                     lyricsPath: books[index].lyricspath,
                                   )));
                     },

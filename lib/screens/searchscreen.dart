@@ -103,6 +103,7 @@ class _SearchPageState extends State<SearchPage> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => LyricsPage(
+                            title: books[index].title,
                             lyricsPath: books[index].lyricspath,
                           ),
                         ),

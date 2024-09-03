@@ -157,7 +157,8 @@ class _SongFullPageState extends State<SongFullPage> {
               ),
               //Lyrics
 
-              LyricsCard(lyricsPath: widget.song.lyricspath)
+              LyricsCard(
+                  title: widget.song.title, lyricsPath: widget.song.lyricspath)
             ],
           ),
         ),

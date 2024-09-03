@@ -4,7 +4,8 @@ import 'package:flutter/services.dart' show rootBundle;
 
 class LyricsCard extends StatefulWidget {
   final String lyricsPath;
-  const LyricsCard({super.key, required this.lyricsPath});
+  final String title;
+  const LyricsCard({super.key, required this.title, required this.lyricsPath});
 
   @override
   State<LyricsCard> createState() => _LyricsCardState();
@@ -12,6 +13,13 @@ class LyricsCard extends StatefulWidget {
 
 class _LyricsCardState extends State<LyricsCard> {
   String _fileContent = '';
+  double _fontSize = 14;
+
+  void update() {
+    setState(() {
+      _fontSize;
+    });
+  }
 
   @override
   void initState() {
@@ -37,7 +45,7 @@ class _LyricsCardState extends State<LyricsCard> {
   Widget build(BuildContext context) {
     return Container(
         margin: const EdgeInsets.all(25),
-        width: 350,
+        width: 700,
         decoration: const BoxDecoration(
           color: Colors.black12,
           borderRadius: BorderRadius.all(Radius.circular(8)),
@@ -51,26 +59,71 @@ class _LyricsCardState extends State<LyricsCard> {
                 children: [
                   Text(
                     overflow: TextOverflow.ellipsis,
-                    "Lyrics",
+                    widget.title,
                     style: GoogleFonts.inconsolata(
-                      fontSize: 16,
+                      fontSize: 18,
                     ),
                   ),
-                  Opacity(
-                    opacity: 0.5,
-                    child: Image.asset(
-                      'icons/paper.png',
-                      scale: 10,
-                    ),
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          _fontSize = 14;
+                          update();
+                        },
+                        child: const Text(
+                          "Aa",
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          _fontSize = 18;
+                          update();
+                        },
+                        child: const Text(
+                          "Aa",
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          _fontSize = 20;
+                          update();
+                        },
+                        child: const Text(
+                          "Aa",
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
             ),
             Container(
+                alignment: Alignment.centerLeft,
                 margin: const EdgeInsets.all(10),
-                child: Text((widget.lyricsPath == "none")
-                    ? "Comming Soon..\n\n"
-                    : _fileContent))
+                child: Text(
+                  (widget.lyricsPath == "none")
+                      ? "Comming Soon..\n\n"
+                      : _fileContent,
+                  style: TextStyle(
+                    fontSize: _fontSize,
+                  ),
+                ))
           ],
         ));
   }

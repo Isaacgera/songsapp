@@ -3,9 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:songsapp/widgets/lyricscard.dart';
 
 class LyricsPage extends StatelessWidget {
-  const LyricsPage({super.key, required this.lyricsPath});
+  const LyricsPage({super.key, required this.title, required this.lyricsPath});
 
   final String lyricsPath;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,8 @@ class LyricsPage extends StatelessWidget {
         automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
-          child: Center(child: LyricsCard(lyricsPath: lyricsPath))),
+          child:
+              Center(child: LyricsCard(title: title, lyricsPath: lyricsPath))),
     );
   }
 }
