@@ -55,13 +55,15 @@ class _LyricsCardState extends State<LyricsCard> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    overflow: TextOverflow.ellipsis,
-                    widget.title,
-                    style: GoogleFonts.inconsolata(
-                      fontSize: 18,
+                  Expanded(
+                    child: Text(
+                      overflow: TextOverflow.ellipsis,
+                      widget.title,
+                      style: GoogleFonts.inconsolata(
+                        fontSize: 18,
+                      ),
                     ),
                   ),
                   Row(
