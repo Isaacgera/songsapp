@@ -1126,6 +1126,577 @@ class BooksProvider {
     subtitle: "ఎడబాయని నీకృపలో",
     lyricspath: "assets/lyrics/187.txt",
   );
+  //preparing book(s) for Book-5 [188-259]
+  Book b188 = const Book(
+    id: 188,
+    title: "NULL",
+    subtitle: "బెత్లెహేములో పశువుల",
+    lyricspath: "assets/lyrics/188.txt",
+  );
+  Book b189 = const Book(
+    id: 189,
+    title: "NULL",
+    subtitle: "ప్రభుయేసు ఆగమనం",
+    lyricspath: "assets/lyrics/189.txt",
+  );
+  Book b190 = const Book(
+    id: 190,
+    title: "NULL",
+    subtitle: "నా జీవిత వ్యధలనుండి",
+    lyricspath: "assets/lyrics/190.txt",
+  );
+  Book b191 = const Book(
+    id: 191,
+    title: "NULL",
+    subtitle: "యేసయ్యా నీ కృప",
+    lyricspath: "assets/lyrics/191.txt",
+  );
+  Book b192 = const Book(
+    id: 192,
+    title: "NULL",
+    subtitle: "నా అవయవాలన్నీ",
+    lyricspath: "assets/lyrics/192.txt",
+  );
+  Book b193 = const Book(
+    id: 193,
+    title: "NULL",
+    subtitle: "నీ గృహం యేసుక్రీస్తు",
+    lyricspath: "assets/lyrics/193.txt",
+  );
+  Book b194 = const Book(
+    id: 194,
+    title: "NULL",
+    subtitle: "నీవు నాకుంటే చాలు",
+    lyricspath: "assets/lyrics/194.txt",
+  );
+  Book b195 = const Book(
+    id: 195,
+    title: "NULL",
+    subtitle: "నీకృప నీకృప",
+    lyricspath: "assets/lyrics/195.txt",
+  );
+  Book b196 = const Book(
+    id: 196,
+    title: "NULL",
+    subtitle: "మరణమంటే భయము",
+    lyricspath: "assets/lyrics/196.txt",
+  );
+  Book b197 = const Book(
+    id: 197,
+    title: "NULL",
+    subtitle: "నేడుపోయి ద్రాక్షతోటలో",
+    lyricspath: "assets/lyrics/197.txt",
+  );
+  Book b198 = const Book(
+    id: 198,
+    title: "NULL",
+    subtitle: "అనాధలకు నాధుడా",
+    lyricspath: "assets/lyrics/198.txt",
+  );
+  Book b199 = const Book(
+    id: 199,
+    title: "NULL",
+    subtitle: "మునుపున్న వేడీ",
+    lyricspath: "assets/lyrics/199.txt",
+  );
+  Book b200 = const Book(
+    id: 200,
+    title: "NULL",
+    subtitle: "విశ్వాసీ మొదటిగా",
+    lyricspath: "assets/lyrics/200.txt",
+  );
+  Book b201 = const Book(
+    id: 201,
+    title: "NULL",
+    subtitle: "కనులున్నంత వరకే",
+    lyricspath: "assets/lyrics/201.txt",
+  );
+  Book b202 = const Book(
+    id: 202,
+    title: "NULL",
+    subtitle: "యేసయ్య నీ స్వరము",
+    lyricspath: "assets/lyrics/202.txt",
+  );
+  Book b203 = const Book(
+    id: 203,
+    title: "NULL",
+    subtitle: "జాలిగలదేవా కృపగలతండ్రీ",
+    lyricspath: "assets/lyrics/203.txt",
+  );
+  Book b204 = const Book(
+    id: 204,
+    title: "NULL",
+    subtitle: "ఈ వివాహం మధురము",
+    lyricspath: "assets/lyrics/204.txt",
+  );
+  Book b205 = const Book(
+    id: 205,
+    title: "NULL",
+    subtitle: "పరిశుద్ధమైన వివాహము",
+    lyricspath: "assets/lyrics/205.txt",
+  );
+  Book b206 = const Book(
+    id: 206,
+    title: "NULL",
+    subtitle: "స్తుతులు అర్పింతును",
+    lyricspath: "assets/lyrics/206.txt",
+  );
+  Book b207 = const Book(
+    id: 207,
+    title: "NULL",
+    subtitle: "కుడివైపునకును ఎడమవైపునకును",
+    lyricspath: "assets/lyrics/207.txt",
+  );
+  Book b208 = const Book(
+    id: 208,
+    title: "NULL",
+    subtitle: "సోదర సోదరి జనులారా",
+    lyricspath: "assets/lyrics/208.txt",
+  );
+  Book b209 = const Book(
+    id: 209,
+    title: "NULL",
+    subtitle: "యేసయ్యా నీకొరకే",
+    lyricspath: "assets/lyrics/209.txt",
+  );
+  Book b210 = const Book(
+    id: 210,
+    title: "NULL",
+    subtitle: "కనికరసంపన్నుడా కరుణా",
+    lyricspath: "assets/lyrics/210.txt",
+  );
+  Book b211 = const Book(
+    id: 211,
+    title: "NULL",
+    subtitle: "దయా మయుడవు",
+    lyricspath: "assets/lyrics/211.txt",
+  );
+  Book b212 = const Book(
+    id: 212,
+    title: "NULL",
+    subtitle: "ప్రియమైన సంఘమా",
+    lyricspath: "assets/lyrics/212.txt",
+  );
+  Book b213 = const Book(
+    id: 213,
+    title: "NULL",
+    subtitle: "ఎంతటివాడవు ఎన్ని",
+    lyricspath: "assets/lyrics/213.txt",
+  );
+  Book b214 = const Book(
+    id: 214,
+    title: "NULL",
+    subtitle: "నీకృపనాకు చాలయ్యా",
+    lyricspath: "assets/lyrics/214.txt",
+  );
+  Book b215 = const Book(
+    id: 215,
+    title: "NULL",
+    subtitle: "సంగతులను పైపైనే",
+    lyricspath: "assets/lyrics/215.txt",
+  );
+  Book b216 = const Book(
+    id: 216,
+    title: "NULL",
+    subtitle: "కుటుంబము కట్టాలని",
+    lyricspath: "assets/lyrics/216.txt",
+  );
+  Book b217 = const Book(
+    id: 217,
+    title: "NULL",
+    subtitle: "నీవు తెలివితో",
+    lyricspath: "assets/lyrics/217.txt",
+  );
+  Book b218 = const Book(
+    id: 218,
+    title: "NULL",
+    subtitle: "జయము జయము",
+    lyricspath: "assets/lyrics/218.txt",
+  );
+  Book b219 = const Book(
+    id: 219,
+    title: "NULL",
+    subtitle: "యేసుప్రభూ నను",
+    lyricspath: "assets/lyrics/219.txt",
+  );
+  Book b220 = const Book(
+    id: 220,
+    title: "NULL",
+    subtitle: "యేసూ నా రాజా",
+    lyricspath: "assets/lyrics/220.txt",
+  );
+  Book b221 = const Book(
+    id: 221,
+    title: "NULL",
+    subtitle: "సుందర సుమధుర",
+    lyricspath: "assets/lyrics/221.txt",
+  );
+  Book b222 = const Book(
+    id: 222,
+    title: "NULL",
+    subtitle: "ప్రార్థించువారు పాపముచేయలేరు",
+    lyricspath: "assets/lyrics/222.txt",
+  );
+  Book b223 = const Book(
+    id: 223,
+    title: "NULL",
+    subtitle: "యేసు నీ ప్రేమా",
+    lyricspath: "assets/lyrics/223.txt",
+  );
+  Book b224 = const Book(
+    id: 224,
+    title: "NULL",
+    subtitle: "సిలువ మరణము",
+    lyricspath: "assets/lyrics/224.txt",
+  );
+  Book b225 = const Book(
+    id: 225,
+    title: "NULL",
+    subtitle: "అతిత్వరగా నాకై",
+    lyricspath: "assets/lyrics/225.txt",
+  );
+  Book b226 = const Book(
+    id: 226,
+    title: "NULL",
+    subtitle: "యేసుక్రీస్తు ప్రభువా",
+    lyricspath: "assets/lyrics/226.txt",
+  );
+  Book b227 = const Book(
+    id: 227,
+    title: "NULL",
+    subtitle: "సంఘమా సంఘమా",
+    lyricspath: "assets/lyrics/227.txt",
+  );
+  Book b228 = const Book(
+    id: 228,
+    title: "NULL",
+    subtitle: "నీ కృప నాకు చాలు",
+    lyricspath: "assets/lyrics/228.txt",
+  );
+  Book b229 = const Book(
+    id: 229,
+    title: "NULL",
+    subtitle: "ఎందుకో ఇంతగా",
+    lyricspath: "assets/lyrics/229.txt",
+  );
+  Book b230 = const Book(
+    id: 230,
+    title: "NULL",
+    subtitle: "యేసుక్రీస్తు ప్రభు",
+    lyricspath: "assets/lyrics/230.txt",
+  );
+  Book b231 = const Book(
+    id: 231,
+    title: "NULL",
+    subtitle: "యేసు ప్రభువు మనతో",
+    lyricspath: "assets/lyrics/231.txt",
+  );
+  Book b232 = const Book(
+    id: 232,
+    title: "NULL",
+    subtitle: "కనులు పైకెత్తి చూడుము",
+    lyricspath: "assets/lyrics/232.txt",
+  );
+  Book b233 = const Book(
+    id: 233,
+    title: "NULL",
+    subtitle: "మనుష్యుల పట్టు",
+    lyricspath: "assets/lyrics/233.txt",
+  );
+  Book b234 = const Book(
+    id: 234,
+    title: "NULL",
+    subtitle: "యేసుప్రభువు మంచిదేవుడు",
+    lyricspath: "assets/lyrics/234.txt",
+  );
+  Book b235 = const Book(
+    id: 235,
+    title: "NULL",
+    subtitle: "శ్రమదినమున దిగులుపడి",
+    lyricspath: "assets/lyrics/235.txt",
+  );
+  Book b236 = const Book(
+    id: 236,
+    title: "NULL",
+    subtitle: "కపటపు నడతను",
+    lyricspath: "assets/lyrics/236.txt",
+  );
+  Book b237 = const Book(
+    id: 237,
+    title: "NULL",
+    subtitle: "ఆనందముతో యేసుప్రభుని",
+    lyricspath: "assets/lyrics/237.txt",
+  );
+  Book b238 = const Book(
+    id: 238,
+    title: "NULL",
+    subtitle: "ఎంత పాపినైన యేసయ్య",
+    lyricspath: "assets/lyrics/238.txt",
+  );
+  Book b239 = const Book(
+    id: 239,
+    title: "NULL",
+    subtitle: "మనముందు నడచువాడు",
+    lyricspath: "assets/lyrics/239.txt",
+  );
+  Book b240 = const Book(
+    id: 240,
+    title: "NULL",
+    subtitle: "యేసుప్రభుని రాకడ",
+    lyricspath: "assets/lyrics/240.txt",
+  );
+  Book b241 = const Book(
+    id: 241,
+    title: "NULL",
+    subtitle: "సాగిపోయెదన్ సాగిపోయెదన్",
+    lyricspath: "assets/lyrics/241.txt",
+  );
+  Book b242 = const Book(
+    id: 242,
+    title: "NULL",
+    subtitle: "మహిమరాజా దివ్యతేజా",
+    lyricspath: "assets/lyrics/242.txt",
+  );
+  Book b243 = const Book(
+    id: 243,
+    title: "NULL",
+    subtitle: "యేసురక్తములో నే కడుగబడితిని",
+    lyricspath: "assets/lyrics/243.txt",
+  );
+  Book b244 = const Book(
+    id: 244,
+    title: "NULL",
+    subtitle: "చెడిపోయిన రోగినయా",
+    lyricspath: "assets/lyrics/244.txt",
+  );
+  Book b245 = const Book(
+    id: 245,
+    title: "NULL",
+    subtitle: "సాగిపోవుటకు నీ కృపచూపుమయా",
+    lyricspath: "assets/lyrics/245.txt",
+  );
+  Book b246 = const Book(
+    id: 246,
+    title: "NULL",
+    subtitle: "నీవంటే నాకు ప్రేమయా",
+    lyricspath: "assets/lyrics/246.txt",
+  );
+  Book b247 = const Book(
+    id: 247,
+    title: "NULL",
+    subtitle: "నా సొంత తోటను",
+    lyricspath: "assets/lyrics/247.txt",
+  );
+  Book b248 = const Book(
+    id: 248,
+    title: "NULL",
+    subtitle: "కుటుంబమంతా రక్షింపబడి",
+    lyricspath: "assets/lyrics/248.txt",
+  );
+  Book b249 = const Book(
+    id: 249,
+    title: "NULL",
+    subtitle: "ప్రభుయేసు క్రీస్తు ప్రేమ",
+    lyricspath: "assets/lyrics/249.txt",
+  );
+  Book b250 = const Book(
+    id: 250,
+    title: "NULL",
+    subtitle: "నాయేసు నామము ఎంతో",
+    lyricspath: "assets/lyrics/250.txt",
+  );
+  Book b251 = const Book(
+    id: 251,
+    title: "NULL",
+    subtitle: "విజయము నీ స్వంతమయా",
+    lyricspath: "assets/lyrics/251.txt",
+  );
+  Book b252 = const Book(
+    id: 252,
+    title: "NULL",
+    subtitle: "యేసయ్యా నీకృప గ్రహియించలేను",
+    lyricspath: "assets/lyrics/252.txt",
+  );
+  Book b253 = const Book(
+    id: 253,
+    title: "NULL",
+    subtitle: "ఒకనాడు అంధకారం",
+    lyricspath: "assets/lyrics/253.txt",
+  );
+  Book b254 = const Book(
+    id: 254,
+    title: "NULL",
+    subtitle: "నిను స్తుతియించుటకు",
+    lyricspath: "assets/lyrics/254.txt",
+  );
+  Book b255 = const Book(
+    id: 255,
+    title: "NULL",
+    subtitle: "యేసయ్య మాట వినండి",
+    lyricspath: "assets/lyrics/255.txt",
+  );
+  Book b256 = const Book(
+    id: 256,
+    title: "NULL",
+    subtitle: "యేసు త్వరగ వచ్చుచుండెను",
+    lyricspath: "assets/lyrics/256.txt",
+  );
+  Book b257 = const Book(
+    id: 257,
+    title: "NULL",
+    subtitle: "అంతా నీకు వ్యతిరేకమే",
+    lyricspath: "assets/lyrics/257.txt",
+  );
+  Book b258 = const Book(
+    id: 258,
+    title: "NULL",
+    subtitle: "యేసుక్రీస్తు ప్రభుకు ఆరాధన",
+    lyricspath: "assets/lyrics/258.txt",
+  );
+  Book b259 = const Book(
+    id: 259,
+    title: "NULL",
+    subtitle: "సాగిపోతుంది మన ప్రార్ధన",
+    lyricspath: "assets/lyrics/259.txt",
+  );
+  Book b260 = const Book(
+    id: 260,
+    title: "NULL",
+    subtitle: "యేసువైపే చూచుచూ",
+    lyricspath: "assets/lyrics/260.txt",
+  );
+  Book b261 = const Book(
+    id: 261,
+    title: "NULL",
+    subtitle: "దేవుని వాక్యము పరిశుద్ధ",
+    lyricspath: "assets/lyrics/261.txt",
+  );
+  Book b262 = const Book(
+    id: 262,
+    title: "NULL",
+    subtitle: "ప్రభుయేసు రక్తములో",
+    lyricspath: "assets/lyrics/262.txt",
+  );
+  Book b263 = const Book(
+    id: 263,
+    title: "NULL",
+    subtitle: "నన్ను ఆకర్షించుము",
+    lyricspath: "assets/lyrics/263.txt",
+  );
+  Book b264 = const Book(
+    id: 264,
+    title: "NULL",
+    subtitle: "ఈ పునాది యేసుక్రీస్తే",
+    lyricspath: "assets/lyrics/264.txt",
+  );
+  Book b265 = const Book(
+    id: 265,
+    title: "NULL",
+    subtitle: "నీ దోనెను లోతునకు",
+    lyricspath: "assets/lyrics/265.txt",
+  );
+  Book b266 = const Book(
+    id: 266,
+    title: "NULL",
+    subtitle: "యేసయ్యా ఆ నా కన్నతండ్రివీ ",
+    lyricspath: "assets/lyrics/266.txt",
+  );
+  Book b267 = const Book(
+    id: 267,
+    title: "NULL",
+    subtitle: "ఎచటకెళ్ళగలనయా కృపామయా",
+    lyricspath: "assets/lyrics/267.txt",
+  );
+  Book b268 = const Book(
+    id: 268,
+    title: "NULL",
+    subtitle: "ఒంటరిగా సాగుచుంటివా",
+    lyricspath: "assets/lyrics/268.txt",
+  );
+  Book b269 = const Book(
+    id: 269,
+    title: "NULL",
+    subtitle: "దయగలిగిన రాజువు ఘనుడవు",
+    lyricspath: "assets/lyrics/269.txt",
+  );
+  Book b270 = const Book(
+    id: 270,
+    title: "NULL",
+    subtitle: "ప్రతిదినము ప్రతి విషయములో",
+    lyricspath: "assets/lyrics/270.txt",
+  );
+  Book b271 = const Book(
+    id: 271,
+    title: "NULL",
+    subtitle: "నా గిన్నెనిండి పొర్లుచున్నది",
+    lyricspath: "assets/lyrics/271.txt",
+  );
+  Book b272 = const Book(
+    id: 272,
+    title: "NULL",
+    subtitle: "స్తుతించెదము పూజించెదము",
+    lyricspath: "assets/lyrics/272.txt",
+  );
+  Book b273 = const Book(
+    id: 273,
+    title: "NULL",
+    subtitle: "స్తుతులు చెల్లింప నోరిచ్చినావే",
+    lyricspath: "assets/lyrics/273.txt",
+  );
+  Book b274 = const Book(
+    id: 274,
+    title: "NULL",
+    subtitle: "యేసయ్యా నా ప్రాణ",
+    lyricspath: "assets/lyrics/274.txt",
+  );
+  Book b275 = const Book(
+    id: 275,
+    title: "NULL",
+    subtitle: "అహంకారమును వీడుము",
+    lyricspath: "assets/lyrics/275.txt",
+  );
+  Book b276 = const Book(
+    id: 276,
+    title: "NULL",
+    subtitle: "యెహోవా దేవా యేసుప్రభూ",
+    lyricspath: "assets/lyrics/276.txt",
+  );
+  Book b277 = const Book(
+    id: 277,
+    title: "NULL",
+    subtitle: "యేసుక్రీస్తుప్రభువు పాపవిమోచకుడు",
+    lyricspath: "assets/lyrics/277.txt",
+  );
+  Book b278 = const Book(
+    id: 278,
+    title: "NULL",
+    subtitle: "దేవుని మాట వినుము",
+    lyricspath: "assets/lyrics/278.txt",
+  );
+  Book b279 = const Book(
+    id: 279,
+    title: "NULL",
+    subtitle: "యేసు నా దేవ",
+    lyricspath: "assets/lyrics/279.txt",
+  );
+  Book b280 = const Book(
+    id: 280,
+    title: "NULL",
+    subtitle: "విశ్వసికి స్వపరీక్ష",
+    lyricspath: "assets/lyrics/280.txt",
+  );
+  Book b281 = const Book(
+    id: 281,
+    title: "NULL",
+    subtitle: "యేసుప్రభూ నీవు చాలయ్యా",
+    lyricspath: "assets/lyrics/281.txt",
+  );
+  Book b282 = const Book(
+    id: 282,
+    title: "NULL",
+    subtitle: "లెమ్ము తేజరిల్లుము",
+    lyricspath: "assets/lyrics/282.txt",
+  );
 
   //preparing list of Book(s)
   List<Book> books = [];
@@ -1317,7 +1888,102 @@ class BooksProvider {
       b184,
       b185,
       b186,
-      b187
+      b187,
+      b188,
+      b189,
+      b190,
+      b191,
+      b192,
+      b193,
+      b194,
+      b195,
+      b196,
+      b197,
+      b198,
+      b199,
+      b200,
+      b201,
+      b202,
+      b203,
+      b204,
+      b205,
+      b206,
+      b207,
+      b208,
+      b209,
+      b210,
+      b211,
+      b212,
+      b213,
+      b214,
+      b215,
+      b216,
+      b217,
+      b218,
+      b219,
+      b220,
+      b221,
+      b222,
+      b223,
+      b224,
+      b225,
+      b226,
+      b227,
+      b228,
+      b229,
+      b230,
+      b231,
+      b232,
+      b233,
+      b234,
+      b235,
+      b236,
+      b237,
+      b238,
+      b239,
+      b240,
+      b241,
+      b242,
+      b243,
+      b244,
+      b245,
+      b246,
+      b247,
+      b248,
+      b249,
+      b250,
+      b251,
+      b252,
+      b253,
+      b254,
+      b255,
+      b256,
+      b257,
+      b258,
+      b259,
+      b260,
+      b261,
+      b262,
+      b263,
+      b264,
+      b265,
+      b266,
+      b267,
+      b268,
+      b269,
+      b270,
+      b271,
+      b272,
+      b273,
+      b274,
+      b275,
+      b276,
+      b277,
+      b278,
+      b279,
+      b280,
+      b281,
+      b282
     ];
   }
 
