@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_ant_identifier_names
 
 import 'package:songsapp/engine/books_provider.dart';
 import 'package:songsapp/models/song.dart';
@@ -8,20 +8,14 @@ class SongsProvider {
 
   BooksProvider bookprovider = BooksProvider();
 
-  // late Song a1_song1 = Song(
-  //   title: bookprovider.b1.title,
-  //   subtitle: bookprovider.b1.subtitle,
+  //preparing songs
+  // final Song a1_song1 =  Song(
+  //   title: "Comentry 1",
+  //   subtitle: "వ్యాఖ్యానం 1",
   //   audiopath: "album1/1.mp3",
-  //   lyricspath: bookprovider.b1.lyricspath,
+  //   lyricspath: "lyrics/a1_comentry.txt",
   // );
 
-  //preparing songs
-  final Song a1_song1 = const Song(
-    title: "Comentry 1",
-    subtitle: "వ్యాఖ్యానం 1",
-    audiopath: "album1/1.mp3",
-    lyricspath: "lyrics/a1_comentry.txt",
-  );
   //26
   late Song a1_song2 = Song(
     title: bookprovider.b26.title,
@@ -79,27 +73,28 @@ class SongsProvider {
     lyricspath: bookprovider.b29.lyricspath,
   );
   //null no lyrics
-  final Song a1_song10 = const Song(
-    title: "Prayer",
-    subtitle: "ప్రార్థన",
-    audiopath: "album1/10.mp3",
-    lyricspath: "lyrics/9.txt",
-  );
+  // final Song a1_song10 = const Song(
+  //   title: "Prayer",
+  //   subtitle: "ప్రార్థన",
+  //   audiopath: "album1/10.mp3",
+  //   lyricspath: "lyrics/9.txt",
+  // );
   //address
-  final Song a1_song11 = const Song(
-    title: "Aedres",
-    subtitle: "ఎడ్రెస్",
-    audiopath: "album1/11.mp3",
-    lyricspath: "lyrics/10.txt",
-  );
+  // final Song a1_song11 =  Song(
+  //   title: "Aedres",
+  //   subtitle: "ఎడ్రెస్",
+  //   audiopath: "album1/11.mp3",
+  //   lyricspath: "lyrics/10.txt",
+  // );
 
   //reading Songs2 for ALBUM 02
-  final Song a2_song1 = const Song(
-    title: "Comentry 2",
-    subtitle: "వ్యాఖ్యానం 2",
-    audiopath: "album2/1.mp3",
-    lyricspath: "lyrics/a1_comentry.txt",
-  );
+  // final Song a2_song1 = const Song(
+  //   title: "Comentry 2",
+  //   subtitle: "వ్యాఖ్యానం 2",
+  //   audiopath: "album2/1.mp3",
+  //   lyricspath: "lyrics/a1_comentry.txt",
+  // );
+
   //2
   late Song a2_song2 = Song(
     title: bookprovider.b2.title,
@@ -157,117 +152,117 @@ class SongsProvider {
     lyricspath: bookprovider.b7.lyricspath,
   );
   //reading Songs3 for ALBUM 03
-  //null
-  final Song a3_song1 = const Song(
-    title: "Sagi Povutaku",
-    subtitle: "సాగి పోవుటకు",
+  //259
+  late Song a3_song1 = Song(
+    title: bookprovider.b259.title,
+    subtitle: bookprovider.b259.subtitle,
     audiopath: "album3/1.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b259.lyricspath,
   );
-  //null
-  final Song a3_song2 = const Song(
-    title: "Manchi Deva Joy",
-    subtitle: "మాంచి దేవా జాయ్",
+  //9
+  late Song a3_song2 = Song(
+    title: bookprovider.b9.title,
+    subtitle: bookprovider.b9.subtitle,
     audiopath: "album3/2.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b9.lyricspath,
   );
   //11
-  final Song a3_song3 = const Song(
-    title: "Pillalamu ",
-    subtitle: "పిల్లలము యేసయ్యా",
+  late Song a3_song3 = Song(
+    title: bookprovider.b11.title,
+    subtitle: bookprovider.b11.subtitle,
     audiopath: "album3/3.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b11.lyricspath,
   );
-  //null
-  final Song a3_song4 = const Song(
-    title: "Yehova Unnavadavu Sarwes",
-    subtitle: "యెహోవా ఉన్నవాడవు సర్వేస్",
+  //113
+  late Song a3_song4 = Song(
+    title: bookprovider.b113.title,
+    subtitle: bookprovider.b113.subtitle,
     audiopath: "album3/4.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b113.lyricspath,
   );
-  //null
-  final Song a3_song5 = const Song(
-    title: "Neevu Nakunte Chalunu",
-    subtitle: "నీవు నాకుంటే చాలును",
+  //194
+  late Song a3_song5 = Song(
+    title: bookprovider.b194.title,
+    subtitle: bookprovider.b194.subtitle,
     audiopath: "album3/5.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b194.lyricspath,
   );
-  //null
-  final Song a3_song6 = const Song(
-    title: "Entha Goppa Krupa",
-    subtitle: "ఎంత గొప్ప కృపా",
+  //165
+  late Song a3_song6 = Song(
+    title: bookprovider.b165.title,
+    subtitle: bookprovider.b165.subtitle,
     audiopath: "album3/6.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b165.lyricspath,
   );
-  //null
-  final Song a3_song7 = const Song(
-    title: "Chedipoyina Roginaya Joy",
-    subtitle: "చెడిపోయిన రోగినాయ ఆనందం",
+  //244
+  late Song a3_song7 = Song(
+    title: bookprovider.b244.title,
+    subtitle: bookprovider.b244.subtitle,
     audiopath: "album3/7.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b244.lyricspath,
   );
-  //null
-  final Song a3_song8 = const Song(
-    title: "Nee Krupa Naku",
-    subtitle: "నీ కృపా నాకు",
+  //214
+  late Song a3_song8 = Song(
+    title: bookprovider.b214.title,
+    subtitle: bookprovider.b214.subtitle,
     audiopath: "album3/8.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b214.lyricspath,
   );
-  //null
-  final Song a3_song9 = const Song(
-    title: "Aradhana Cheyudam",
-    subtitle: "ఆరాధన చేయుడం",
+  //87
+  late Song a3_song9 = Song(
+    title: bookprovider.b87.title,
+    subtitle: bookprovider.b87.subtitle,
     audiopath: "album3/9.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b87.lyricspath,
   );
-  //null
-  final Song a3_song10 = const Song(
-    title: "Sodara Sodari",
-    subtitle: "సోదర సోదరి",
+  //208
+  late Song a3_song10 = Song(
+    title: bookprovider.b208.title,
+    subtitle: bookprovider.b208.subtitle,
     audiopath: "album3/10.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b208.lyricspath,
   );
-  //null
-  final Song a3_song11 = const Song(
-    title: "Ninu Sthuyinchutaku Enno Karnamulu",
-    subtitle: "నిను స్తుయించుటకు ఎన్నో కర్ణములు",
+  //254
+  late Song a3_song11 = Song(
+    title: bookprovider.b254.title,
+    subtitle: bookprovider.b254.subtitle,
     audiopath: "album3/11.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b254.lyricspath,
   );
-  //null
-  final Song a3_song12 = const Song(
-    title: "Manchi Devudu Naku dorikenu",
-    subtitle: "మంచి దేవుడు నాకు దొరికెను",
+  //147
+  late Song a3_song12 = Song(
+    title: bookprovider.b147.title,
+    subtitle: bookprovider.b147.subtitle,
     audiopath: "album3/12.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b147.lyricspath,
   );
-  //null
-  final Song a3_song13 = const Song(
-    title: "Ma Manchi deva",
-    subtitle: "మ మంచి దేవా",
+  //139
+  late Song a3_song13 = Song(
+    title: bookprovider.b139.title,
+    subtitle: bookprovider.b139.subtitle,
     audiopath: "album3/13.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b139.lyricspath,
   );
-  //null
-  final Song a3_song14 = const Song(
-    title: "Daya Mayudavu",
-    subtitle: "దయా మయుడవు",
+  //211
+  late Song a3_song14 = Song(
+    title: bookprovider.b211.title,
+    subtitle: bookprovider.b211.subtitle,
     audiopath: "album3/14.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b211.lyricspath,
   );
-  //null
-  final Song a3_song15 = const Song(
-    title: "Parishudduda",
-    subtitle: "పరిశుద్ధుడు",
+  //172
+  late Song a3_song15 = Song(
+    title: bookprovider.b172.title,
+    subtitle: bookprovider.b172.subtitle,
     audiopath: "album3/15.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b172.lyricspath,
   );
-  //null
-  final Song a3_song16 = const Song(
-    title: "Sagi Povutaku",
-    subtitle: "సాగి పోవుటకు",
+  //245
+  late Song a3_song16 = Song(
+    title: bookprovider.b245.title,
+    subtitle: bookprovider.b245.subtitle,
     audiopath: "album3/16.mp3",
-    lyricspath: "none",
+    lyricspath: bookprovider.b245.lyricspath,
   );
   //preparing for initialization
   late final List<Song> a1_songs, a2_songs, a3_songs;

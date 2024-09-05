@@ -10,7 +10,7 @@ class BooksProvider {
   );
   Book b2 = const Book(
     id: 2,
-    title: "Stutulapathruda Stothrarhuda",
+    title: "Sthuthula Paathruda",
     subtitle: "స్తుతులపాత్రుడా స్తోత్రార్హుడా",
     lyricspath: "assets/lyrics/2.txt",
   );
@@ -22,19 +22,19 @@ class BooksProvider {
   );
   Book b4 = const Book(
     id: 4,
-    title: "Yesay Na Balamu",
+    title: "Yese Naa Balamu",
     subtitle: "యేసే నా బలము",
     lyricspath: "assets/lyrics/4.txt",
   );
   Book b5 = const Book(
     id: 5,
-    title: "Yesukrithu Prabhu",
+    title: "Yesu Kreesthu Prabhu",
     subtitle: "యేసుక్రీస్తు ప్రభు",
     lyricspath: "assets/lyrics/5.txt",
   );
   Book b6 = const Book(
     id: 6,
-    title: "Yesu Raktamu Karchinapudu",
+    title: "Yesu Raktham Kaarchinappudu",
     subtitle: "ఏసు రక్తము కార్చినపుడు",
     lyricspath: "assets/lyrics/6.txt",
   );
@@ -46,7 +46,7 @@ class BooksProvider {
   );
   Book b8 = const Book(
     id: 8,
-    title: "Ye Jamulo Mana",
+    title: "Ye Jaamulo Mana",
     subtitle: "ఏ జాములో మన",
     lyricspath: "assets/lyrics/8.txt",
   );
@@ -58,7 +58,7 @@ class BooksProvider {
   );
   Book b10 = const Book(
     id: 10,
-    title: "Anudinamu Vakyadhyanamu",
+    title: "Anudinamu Vaakyadyanamu",
     subtitle: "అనుదినము వాక్యధ్యానము",
     lyricspath: "assets/lyrics/10.txt",
   );
@@ -70,37 +70,37 @@ class BooksProvider {
   );
   Book b12 = const Book(
     id: 12,
-    title: "Siluva Maranamuto",
+    title: "Siluva Maranamutho",
     subtitle: "సిలువ మరణముతో",
     lyricspath: "assets/lyrics/12.txt",
   );
   Book b13 = const Book(
     id: 13,
-    title: "Neevale Nenu Undi Neerupam",
+    title: "Neevale Nenunda Neerupam",
     subtitle: "నీవలె నేనుండ నీరూపం",
     lyricspath: "assets/lyrics/13.txt",
   );
   Book b14 = const Book(
     id: 14,
-    title: "Rakshana Navanu Koruko",
+    title: "Rakshana Naavanu Kooruko",
     subtitle: "రక్షణ నావను కోరుకో",
     lyricspath: "assets/lyrics/14.txt",
   );
   Book b15 = const Book(
     id: 15,
-    title: "Prabhuva Nee Koraku",
+    title: "Prabhuvaa Nee Koraku",
     subtitle: "ప్రభువా నీ కొరకు",
     lyricspath: "assets/lyrics/15.txt",
   );
   Book b16 = const Book(
     id: 16,
-    title: "Neevu Leka Nenu Lenuga",
+    title: "Neevu Leka Nenu Lenugaa",
     subtitle: "నీవు లేక నేను లేనుగా",
     lyricspath: "assets/lyrics/16.txt",
   );
   Book b17 = const Book(
     id: 17,
-    title: "Andhakara Bandhurambu",
+    title: "Andhakaara Bandhurambu",
     subtitle: "అంధకార బంధురంబు",
     lyricspath: "assets/lyrics/17.txt",
   );
@@ -124,121 +124,121 @@ class BooksProvider {
   );
   Book b21 = const Book(
     id: 21,
-    title: "Srushtikarta Kanadu Mariya",
+    title: "Srustikartha Kaanadu Mariya",
     subtitle: "సృష్టికర్త కానాడు మరియా",
     lyricspath: "assets/lyrics/21.txt",
   );
   Book b22 = const Book(
     id: 22,
-    title: "Na Chetulaku Yuddhamunu",
+    title: "Naa Chethulaku Yuddhamunu",
     subtitle: "నా చేతులకు యుద్ధమునూ",
     lyricspath: "assets/lyrics/22.txt",
   );
   Book b23 = const Book(
     id: 23,
-    title: "Neelalaningilona Velasenutar",
+    title: "Neelaala Ningilona Velisenu",
     subtitle: "నీలాలనింగిలోన వెలసెనుతార",
     lyricspath: "assets/lyrics/23.txt",
   );
   Book b24 = const Book(
     id: 24,
-    title: "Errani Yesu Raktam",
+    title: "Yerrani Yesu Raktham",
     subtitle: "ఎర్రని యేసు రక్తం",
     lyricspath: "assets/lyrics/24.txt",
   );
   Book b25 = const Book(
     id: 25,
-    title: "Neethimanthudu Vishwasamuvalane",
+    title: "Neethimanthudu Viswasamu",
     subtitle: "నీతిమంతుడు విశ్వాసమువలనే",
     lyricspath: "assets/lyrics/25.txt",
   );
   Book b26 = const Book(
     id: 26,
-    title: "Goppa Devudunnadu",
+    title: "Goppa Devudunnaadu",
     subtitle: "గొప్ప దేవుడున్నాడు",
     lyricspath: "assets/lyrics/26.txt",
   );
   Book b27 = const Book(
     id: 27,
-    title: "Stuthi Gaanamulu Chetumu",
+    title: "Sthuthi Gaanamulu Chethumu",
     subtitle: "స్తుతి గానములు చేతుము",
     lyricspath: "assets/lyrics/27.txt",
   );
   Book b28 = const Book(
     id: 28,
-    title: "Manasuku Ahladaminadi",
+    title: "Manasuku Aahladhamainadhi",
     subtitle: "మనసుకు ఆహ్లాదమైనది",
     lyricspath: "assets/lyrics/28.txt",
   );
   Book b29 = const Book(
     id: 29,
-    title: "Na Ashraya Durgama",
+    title: "Naa Aasraya Durghama",
     subtitle: "నా ఆశ్రయ దుర్గమా",
     lyricspath: "assets/lyrics/29.txt",
   );
   Book b30 = const Book(
     id: 30,
-    title: "Devunivakyamu Ento Madhuramu",
+    title: "Devuni Vaakyamu Yentho",
     subtitle: "దేవునివాక్యము ఎంతోమధురము",
     lyricspath: "assets/lyrics/30.txt",
   );
   Book b31 = const Book(
     id: 31,
-    title: "Nabadhulo Adarana",
+    title: "Naa Bhaadalo Aadharana",
     subtitle: "నాబాధలో ఆదరణ",
     lyricspath: "assets/lyrics/31.txt",
   );
   Book b32 = const Book(
     id: 32,
-    title: "Agipokuma O Nestama",
+    title: "Aagipokumaa Oo Nesthama",
     subtitle: "ఆగిపోకుమా ఓ నేస్తమా",
     lyricspath: "assets/lyrics/32.txt",
   );
   Book b33 = const Book(
     id: 33,
-    title: "Nityamu Niluchu Vakyamu",
+    title: "Nithyamu Niluchu Vaakyamu",
     subtitle: "నిత్యము నిలుచు వాక్యము",
     lyricspath: "assets/lyrics/33.txt",
   );
   Book b34 = const Book(
     id: 34,
-    title: "Yesayya Na Hrudayamu",
+    title: "Yesayya Naa Hrudhayamu",
     subtitle: "యేసయ్యా నా హృదయము",
     lyricspath: "assets/lyrics/34.txt",
   );
   Book b35 = const Book(
     id: 35,
-    title: "Premanu Minchinadedi Ledani",
+    title: "Premanu Minchinadedhi Ledhani",
     subtitle: "ప్రేమను మించినదేదీ లేదని",
     lyricspath: "assets/lyrics/35.txt",
   );
   Book b36 = const Book(
     id: 36,
-    title: "Koruko Manava Veduko",
+    title: "Korukoo Maanava Vedukoo",
     subtitle: "కోరుకో మానవా వేడుకో",
     lyricspath: "assets/lyrics/36.txt",
   );
   Book b37 = const Book(
     id: 37,
-    title: "Nee Raktamu Na Korakai",
+    title: "Nee Rakthamu Naa Korakai",
     subtitle: "నీ రక్తము నాకొరకై",
     lyricspath: "assets/lyrics/37.txt",
   );
   Book b38 = const Book(
     id: 38,
-    title: "Na Chinna Donelo",
+    title: "Naa Chinna Doneloo",
     subtitle: "నా చిన్న దోనెలో",
     lyricspath: "assets/lyrics/38.txt",
   );
   Book b39 = const Book(
     id: 39,
-    title: "Yesay Na Rakshakudu",
+    title: "Yese Naa Rakshakudu",
     subtitle: "యేసే నా రక్షకుడు",
     lyricspath: "assets/lyrics/39.txt",
   );
   Book b40 = const Book(
     id: 40,
-    title: "Marana Dwaramuna",
+    title: "Marana Dwaaramuna",
     subtitle: "మరణ ద్వారమున",
     lyricspath: "assets/lyrics/40.txt",
   );
@@ -250,25 +250,25 @@ class BooksProvider {
   );
   Book b42 = const Book(
     id: 42,
-    title: "O Manavuda",
+    title: "Oo Maanavudaa",
     subtitle: "ఓ మానవుడా",
     lyricspath: "assets/lyrics/42.txt",
   );
   Book b43 = const Book(
     id: 43,
-    title: "Alankarimpabadina Rajuva",
+    title: "Alankarimpabadina Raajuvu",
     subtitle: "అలంకరింపబడిన రాజువు",
     lyricspath: "assets/lyrics/43.txt",
   );
   Book b44 = const Book(
     id: 44,
-    title: "Nee Krupaye Chalunu",
+    title: "Nee Krupaye Chaalunu",
     subtitle: "నీ కృపయే చాలును",
     lyricspath: "assets/lyrics/44.txt",
   );
   Book b45 = const Book(
     id: 45,
-    title: "Na Manasunu Nirmala",
+    title: "Naa Manassunu Nirmala",
     subtitle: "నా మనస్సును నిర్మల",
     lyricspath: "assets/lyrics/45.txt",
   );
@@ -280,79 +280,79 @@ class BooksProvider {
   );
   Book b47 = const Book(
     id: 47,
-    title: "Na Yesayya Na Madiloki",
+    title: "Naa Yesayya Naa Madiloki",
     subtitle: "నా యేసయ్య నా మదిలోకి",
     lyricspath: "assets/lyrics/47.txt",
   );
   Book b48 = const Book(
     id: 48,
-    title: "Ujjivamu Pampumo",
+    title: "Vujjivamu Pampumo",
     subtitle: "ఉజ్జీవము పంపుమో",
     lyricspath: "assets/lyrics/48.txt",
   );
   Book b49 = const Book(
     id: 49,
-    title: "Tolinati Aashalu",
+    title: "Tholinaati Aashalu",
     subtitle: "తొలినాటి ఆశలు",
     lyricspath: "assets/lyrics/49.txt",
   );
   Book b50 = const Book(
     id: 50,
-    title: "Manchi Devudu Na Yesu",
+    title: "Manchi Devudu Naa Yesu",
     subtitle: "మంచి దేవుడు నా యేసు",
     lyricspath: "assets/lyrics/50.txt",
   );
   Book b51 = const Book(
     id: 51,
-    title: "Balheenamaina Manassu",
+    title: "Balahinamaina Manasu",
     subtitle: "బలహీనమైన మనస్సు",
     lyricspath: "assets/lyrics/51.txt",
   );
   Book b52 = const Book(
     id: 52,
-    title: "Prayathnamu Padi Bharamu",
+    title: "Prayaasapadi Bhaaramu",
     subtitle: "ప్రయాసపడి భారము",
     lyricspath: "assets/lyrics/52.txt",
   );
   Book b53 = const Book(
     id: 53,
-    title: "Nee Puttukalo Vichitram",
+    title: "Nee Puttukalo Vichithram",
     subtitle: "నీ పుట్టుకలో విచిత్రం",
     lyricspath: "assets/lyrics/53.txt",
   );
   Book b54 = const Book(
     id: 54,
-    title: "Yehovah Sanvatsaramulu",
+    title: "Yehovaa Samvathsaramulu",
     subtitle: "యెహోవా సంవత్సరములు",
     lyricspath: "assets/lyrics/54.txt",
   );
   Book b55 = const Book(
     id: 55,
-    title: "Stuthula Simhasanamlo",
+    title: "Sthuthula Simhasanamlo",
     subtitle: "స్తుతుల సింహసనంలో",
     lyricspath: "assets/lyrics/55.txt",
   );
   Book b56 = const Book(
     id: 56,
-    title: "Phalinchu Chettunai",
+    title: "Falinchu Chettunai",
     subtitle: "ఫలించు చెట్టునై",
     lyricspath: "assets/lyrics/56.txt",
   );
   Book b57 = const Book(
     id: 57,
-    title: "Aaradhana Stuthistothramul",
+    title: "Aaradhana Sthuthi Sthothramul",
     subtitle: "ఆరాధనా స్తుతిస్తోత్రముల్",
     lyricspath: "assets/lyrics/57.txt",
   );
   Book b58 = const Book(
     id: 58,
-    title: "Yesukristu Prabhuvu",
+    title: "Yesu Kreesthu Prabhuvu",
     subtitle: "యేసుక్రీస్తు ప్రభువు",
     lyricspath: "assets/lyrics/58.txt",
   );
   Book b59 = const Book(
     id: 59,
-    title: "Ellapudu Stuthinchudam",
+    title: "Yellapudu Sthuthinchudhaam",
     subtitle: "ఎల్లప్పుడు స్తుతించుదాం",
     lyricspath: "assets/lyrics/59.txt",
   );
@@ -370,19 +370,19 @@ class BooksProvider {
   );
   Book b62 = const Book(
     id: 62,
-    title: "Krupayanu Padhmu",
+    title: "Krupayanu Padhamu",
     subtitle: "కృపయను పధము",
     lyricspath: "assets/lyrics/62.txt",
   );
   Book b63 = const Book(
     id: 63,
-    title: "Yesayya Namamulo",
+    title: "Yesayya Naamamulo",
     subtitle: "యేసయ్య నామములో",
     lyricspath: "assets/lyrics/63.txt",
   );
   Book b64 = const Book(
     id: 64,
-    title: "Raktamu Raktamu",
+    title: "Rakthamu Rakthamu",
     subtitle: "రక్తము రక్తము",
     lyricspath: "assets/lyrics/64.txt",
   );
@@ -390,73 +390,73 @@ class BooksProvider {
   //preparing book(s) for Book-2,3,4 [65-187]
   Book b65 = const Book(
     id: 65,
-    title: "Sthutulu Sthutulu Sthotramulu",
+    title: "Sthuthulu Sthuthulu Sthothramulu",
     subtitle: "స్తుతులు స్తుతులు స్తోత్రములు",
     lyricspath: "assets/lyrics/65.txt",
   );
   Book b66 = const Book(
     id: 66,
-    title: "Sthuti Sthuti Sthuti",
+    title: "Sthuthi Sthuthi Sthuthi",
     subtitle: "స్తుతి స్తుతి స్తుతి",
     lyricspath: "assets/lyrics/66.txt",
   );
   Book b67 = const Book(
     id: 67,
-    title: "Israyelu Sthutulapaina",
+    title: "Israelu Sthuthulapaina",
     subtitle: "ఇశ్రాయేలు స్తుతులపైనా",
     lyricspath: "assets/lyrics/67.txt",
   );
   Book b68 = const Book(
     id: 68,
-    title: "Vekuvane Lechi Nee Paadamulu",
+    title: "Vekuvane Lechi Nee Paadhamulu",
     subtitle: "వేకువనే లేచి నీ పాదములు",
     lyricspath: "assets/lyrics/68.txt",
   );
   Book b69 = const Book(
     id: 69,
-    title: "Alakinchuvaadaa Aadarinchuvaadaa",
+    title: "Aalakinchuvaada Aadharinchuvaada",
     subtitle: "ఆలకించువాడా ఆదరించువాడా",
     lyricspath: "assets/lyrics/69.txt",
   );
   Book b70 = const Book(
     id: 70,
-    title: "Anukshanamu Krutagnataa",
+    title: "Anukshanamu Kruthagnatha",
     subtitle: "అనుక్షణము కృతజ్ఞతా",
     lyricspath: "assets/lyrics/70.txt",
   );
   Book b71 = const Book(
     id: 71,
-    title: "Nenunnanu Naanu",
+    title: "Nenunnaanu Nannu",
     subtitle: "నేనున్నాను నన్ను",
     lyricspath: "assets/lyrics/71.txt",
   );
   Book b72 = const Book(
     id: 72,
-    title: "Bhayapadanu Nenu",
+    title: "Bayapadanu Nenu",
     subtitle: "భయపడను నేను",
     lyricspath: "assets/lyrics/72.txt",
   );
   Book b73 = const Book(
     id: 73,
-    title: "Nammuta Neevashamaite",
+    title: "Nammuta Nee Vasamaithe",
     subtitle: "నమ్ముట నీవశమైతే",
     lyricspath: "assets/lyrics/73.txt",
   );
   Book b74 = const Book(
     id: 74,
-    title: "Viriginaligina Hrudayamu",
+    title: "Virigi Naligina Hrudhayamu",
     subtitle: "విరిగినలిగిన హృదయము",
     lyricspath: "assets/lyrics/74.txt",
   );
   Book b75 = const Book(
     id: 75,
-    title: "Maranamu Gelachina Yesuprabhu",
+    title: "Maranamu Gelichina Yesu Prabhu",
     subtitle: "మరణము గెలచిన యేసుప్రభు",
     lyricspath: "assets/lyrics/75.txt",
   );
   Book b76 = const Book(
     id: 76,
-    title: "Okka Jeevitam Chakkagundunu",
+    title: "Okka Jeevitham Chakkagundunu",
     subtitle: "ఒక్క జీవితం చక్కగుండును",
     lyricspath: "assets/lyrics/76.txt",
   );
@@ -474,31 +474,31 @@ class BooksProvider {
   );
   Book b79 = const Book(
     id: 79,
-    title: "Kashta Sukhamu Landunaa",
+    title: "Kasta Sukamulandhunaa",
     subtitle: "కష్ట సుఖము లందునా",
     lyricspath: "assets/lyrics/79.txt",
   );
   Book b80 = const Book(
     id: 80,
-    title: "Yesu Leni Jeevitam",
+    title: "Yesu Leni Jeevitham",
     subtitle: "యేసు లేని జీవితం",
     lyricspath: "assets/lyrics/80.txt",
   );
   Book b81 = const Book(
     id: 81,
-    title: "Halleluya Sthutigaanamu",
+    title: "Halleluya Sthuthi Gaanamu",
     subtitle: "హల్లెలూయ స్తుతిగానము",
     lyricspath: "assets/lyrics/81.txt",
   );
   Book b82 = const Book(
     id: 82,
-    title: "Yehovaanu Sthutinchudi",
+    title: "Yehovanu Sthuthinchudi",
     subtitle: "యెహోవాను స్తుతించుడి",
     lyricspath: "assets/lyrics/82.txt",
   );
   Book b83 = const Book(
     id: 83,
-    title: "Edaaina Emaina Ninu",
+    title: "Yedainaa Yemainaa Ninu",
     subtitle: "ఏదైనా ఏమైనా నిను",
     lyricspath: "assets/lyrics/83.txt",
   );
@@ -510,37 +510,37 @@ class BooksProvider {
   );
   Book b85 = const Book(
     id: 85,
-    title: "Sthuti Sthuti Sthuti",
+    title: "Sthuthi Sthuthi Sthuthi",
     subtitle: "స్తుతి స్తుతి స్తుతి",
     lyricspath: "assets/lyrics/85.txt",
   );
   Book b86 = const Book(
     id: 86,
-    title: "Yehovaa Illu Kattinchani",
+    title: "Yehova Illu Kattinchani",
     subtitle: "యెహోవా ఇల్లు కట్టించని",
     lyricspath: "assets/lyrics/86.txt",
   );
   Book b87 = const Book(
     id: 87,
-    title: "Aaradhana Cheyudaam",
+    title: "Aaradhana Cheyudham",
     subtitle: "ఆరాధన చేయుదాం",
     lyricspath: "assets/lyrics/87.txt",
   );
   Book b88 = const Book(
     id: 88,
-    title: "Yesukristhu Prabhuvaa",
+    title: "Yesu Kreesthu Prabhuva",
     subtitle: "యేసుక్రీస్తు ప్రభువా",
     lyricspath: "assets/lyrics/88.txt",
   );
   Book b89 = const Book(
     id: 89,
-    title: "Prati Paristhitilo Sthuti",
+    title: "Prathi Paristhithilo Sthuthi",
     subtitle: "ప్రతి పరిస్థితిలో స్తుతి",
     lyricspath: "assets/lyrics/89.txt",
   );
   Book b90 = const Book(
     id: 90,
-    title: "Premaamayudaa Yesuprabhuvaa",
+    title: "Premamayuda Yesu Prabhuva",
     subtitle: "ప్రేమామయుడా యేసుప్రభువా",
     lyricspath: "assets/lyrics/90.txt",
   );
@@ -558,19 +558,19 @@ class BooksProvider {
   );
   Book b93 = const Book(
     id: 93,
-    title: "Naaku Sahaayamu",
+    title: "Naku Sahayamu",
     subtitle: "నాకు సహాయము",
     lyricspath: "assets/lyrics/93.txt",
   );
   Book b94 = const Book(
     id: 94,
-    title: "Padipothini Kshaminchumaiyaa",
+    title: "Padipothini Kshaminchumayya",
     subtitle: "పడిపోతిని క్షమించుమయ్యా",
     lyricspath: "assets/lyrics/94.txt",
   );
   Book b95 = const Book(
     id: 95,
-    title: "Nuthana Theermanamulatho",
+    title: "Noothana Tirmanamulatho",
     subtitle: "నూతన తీర్మానములతో",
     lyricspath: "assets/lyrics/95.txt",
   );
@@ -582,13 +582,13 @@ class BooksProvider {
   );
   Book b97 = const Book(
     id: 97,
-    title: "Kaluvagirilo Siluva",
+    title: "Kaluvarigirilo Sivuva",
     subtitle: "కలువరిగిరిలో సిలువ",
     lyricspath: "assets/lyrics/97.txt",
   );
   Book b98 = const Book(
     id: 98,
-    title: "Yesuprabhuvu Siluva",
+    title: "Yesu Prabhuvu Siluva",
     subtitle: "యేసుప్రభువు శిలువ",
     lyricspath: "assets/lyrics/98.txt",
   );
@@ -606,13 +606,13 @@ class BooksProvider {
   );
   Book b101 = const Book(
     id: 101,
-    title: "Naa Praardhana Dayatho",
+    title: "Naa Prardhana Dayatho",
     subtitle: "నా ప్రార్ధన దయతో",
     lyricspath: "assets/lyrics/101.txt",
   );
   Book b102 = const Book(
     id: 102,
-    title: "Idi Devuni Mandiramu",
+    title: "Idi Devuni Mandhiramu",
     subtitle: "ఇది దేవుని మందిరము",
     lyricspath: "assets/lyrics/102.txt",
   );
@@ -624,7 +624,7 @@ class BooksProvider {
   );
   Book b104 = const Book(
     id: 104,
-    title: "Siluvalo Naa Sthanamu Gaikoni",
+    title: "Siluvalo Naa Sthaanamu Gaikoni",
     subtitle: "శిలువలో నా స్థానము గైకొని",
     lyricspath: "assets/lyrics/104.txt",
   );
@@ -636,19 +636,19 @@ class BooksProvider {
   );
   Book b106 = const Book(
     id: 106,
-    title: "Vishvasamanunadi Nireekshimpadivaatiki",
+    title: "Viswasamanunadhi Nerikshimpabaduvaati",
     subtitle: "విశ్వాసమనునది నిరీక్షింపడువాటి",
     lyricspath: "assets/lyrics/106.txt",
   );
   Book b107 = const Book(
     id: 107,
-    title: "Krutagnataa Sthutulatho",
+    title: "Kruthagnathaa Sthuthulatho",
     subtitle: "కృతజ్ఞతా స్తుతులతో",
     lyricspath: "assets/lyrics/107.txt",
   );
   Book b108 = const Book(
     id: 108,
-    title: "Yauvanasthulanthaa Andariki",
+    title: "Yavvanasthulantha Andhariki",
     subtitle: "యౌవనస్థులంతా అందరికీ",
     lyricspath: "assets/lyrics/108.txt",
   );
@@ -660,55 +660,55 @@ class BooksProvider {
   );
   Book b110 = const Book(
     id: 110,
-    title: "Yesayya Naa Hrudayamu",
+    title: "Yesayya Naa Hrudhayamu",
     subtitle: "యేసయ్యా నా హృదయము",
     lyricspath: "assets/lyrics/110.txt",
   );
   Book b111 = const Book(
     id: 111,
-    title: "Naaku Praardhana Nerpumu",
+    title: "Naku Prardhana Nerpumu",
     subtitle: "నాకు ప్రార్ధన నేర్పుము",
     lyricspath: "assets/lyrics/111.txt",
   );
   Book b112 = const Book(
     id: 112,
-    title: "Yesayya Jnapakamulatho",
+    title: "Yesayya Gnaapakamulatho",
     subtitle: "యేసయ్య జ్ఞాపకములతో",
     lyricspath: "assets/lyrics/112.txt",
   );
   Book b113 = const Book(
     id: 113,
-    title: "Yehovaa Unnavadavu",
+    title: "Yehova Vunnavaadavu",
     subtitle: "యెహోవా ఉన్నవాడవు",
     lyricspath: "assets/lyrics/113.txt",
   );
   Book b114 = const Book(
     id: 114,
-    title: "Yuvakulaaraa Meeru Balavanthulu",
+    title: "Yuvakulaara Meeru Balavanthulu",
     subtitle: "యువకులారా మీరు బలవంతులూ",
     lyricspath: "assets/lyrics/114.txt",
   );
   Book b115 = const Book(
     id: 115,
-    title: "Naa Maaraa Anubhavamu",
+    title: "Naa Maara Anubhavam",
     subtitle: "నా మారా అనుభవం",
     lyricspath: "assets/lyrics/115.txt",
   );
   Book b116 = const Book(
     id: 116,
-    title: "Neeraktame Neeraktame Naabrathuku",
+    title: "Nee Rakthame Nee Rakthame Naa Brathuku",
     subtitle: "నీరక్తమే నీరక్తమే నాబ్రతుకు",
     lyricspath: "assets/lyrics/116.txt",
   );
   Book b117 = const Book(
     id: 117,
-    title: "Neevu Naakunna Chalu",
+    title: "Neevu Naakunna Chaalu",
     subtitle: "నీవు నాకున్న చాలు",
     lyricspath: "assets/lyrics/117.txt",
   );
   Book b118 = const Book(
     id: 118,
-    title: "Neevu Lekunna Naabrathuke",
+    title: "Neevu Lekunna Naa Brathuke",
     subtitle: "నీవు లేకున్న నాబ్రతుకే",
     lyricspath: "assets/lyrics/118.txt",
   );
@@ -720,7 +720,7 @@ class BooksProvider {
   );
   Book b120 = const Book(
     id: 120,
-    title: "Yesayya Vanamulo Panivaaniga",
+    title: "Yesayya Vanamulo Panivaanigaa",
     subtitle: "యేసయ్య వనములో పనివానిగా",
     lyricspath: "assets/lyrics/120.txt",
   );
@@ -738,19 +738,19 @@ class BooksProvider {
   );
   Book b123 = const Book(
     id: 123,
-    title: "Nee Sevaku Nanu",
+    title: "Nee Sevakai Nanu",
     subtitle: "నీ సేవకు నను",
     lyricspath: "assets/lyrics/123.txt",
   );
   Book b124 = const Book(
     id: 124,
-    title: "Evadainanu Kriisthunandunna",
+    title: "Yevadainanu Kreesthunandunna",
     subtitle: "ఎవడైనను క్రీస్తునందున్న",
     lyricspath: "assets/lyrics/124.txt",
   );
   Book b125 = const Book(
     id: 125,
-    title: "Parama Vindu Siddhamainadi",
+    title: "Parama Vindhu Siddhamainadhi",
     subtitle: "పరమ విందు సిద్ధమైనది",
     lyricspath: "assets/lyrics/125.txt",
   );
@@ -768,115 +768,115 @@ class BooksProvider {
   );
   Book b128 = const Book(
     id: 128,
-    title: "Sthutulatancha Paadedan",
+    title: "Sthuthulatanchu Paadedhan",
     subtitle: "స్తుతులటంచు పాడెదన్",
     lyricspath: "assets/lyrics/128.txt",
   );
   Book b129 = const Book(
     id: 129,
-    title: "Sthotramulu Sthotramulu",
+    title: "Sthothramulu Sthothramulu",
     subtitle: "స్తోత్రములు స్తోత్రములు",
     lyricspath: "assets/lyrics/129.txt",
   );
   Book b130 = const Book(
     id: 130,
-    title: "Jagath Punaadiki Mundhe",
+    title: "Jagath Punaadhiki Mundhe",
     subtitle: "జగత్ పునాదికి ముందే",
     lyricspath: "assets/lyrics/130.txt",
   );
   Book b131 = const Book(
     id: 131,
-    title: "Shramavedanato Nanu Kantivi",
+    title: "Sramavedhanatho Nanu Kantivi",
     subtitle: "శ్రమవేదనతో నను కంటివి",
     lyricspath: "assets/lyrics/131.txt",
   );
   Book b132 = const Book(
     id: 132,
-    title: "Simhapu Noru Ela",
+    title: "Simhamu Nooru Yela",
     subtitle: "సింహపు నోరు ఎలా",
     lyricspath: "assets/lyrics/132.txt",
   );
   Book b133 = const Book(
     id: 133,
-    title: "Devuni Chiththamu Mana",
+    title: "Devuni Chitthamu Mana",
     subtitle: "దేవుని చిత్తము మన",
     lyricspath: "assets/lyrics/133.txt",
   );
   Book b134 = const Book(
     id: 134,
-    title: "Praardhanaa Sahavaasa Amshamulu",
+    title: "Prardhanaa Sahavasa Amsamulu",
     subtitle: "ప్రార్ధనా సహవాస అంశములు",
     lyricspath: "assets/lyrics/134.txt",
   );
   Book b135 = const Book(
     id: 135,
-    title: "Naa Ishtamu Choppuna",
+    title: "Naa Istamu Choppuna",
     subtitle: "నా యిష్టము చొప్పున",
     lyricspath: "assets/lyrics/135.txt",
   );
   Book b136 = const Book(
     id: 136,
-    title: "Shrama Dinamuna Neevu",
+    title: "Srama Dinamuna Neevu",
     subtitle: "శ్రమ దినమున నీవు",
     lyricspath: "assets/lyrics/136.txt",
   );
   Book b137 = const Book(
     id: 137,
-    title: "Entha Manchivaduvu",
+    title: "Yentha Manchivaadavu",
     subtitle: "ఎంత మంచివాడవు",
     lyricspath: "assets/lyrics/137.txt",
   );
   Book b138 = const Book(
     id: 138,
-    title: "Chaalinatha Krupa",
+    title: "Chaalinantha Krupa",
     subtitle: "చాలినంత కృప",
     lyricspath: "assets/lyrics/138.txt",
   );
   Book b139 = const Book(
     id: 139,
-    title: "Maa Manchi Devaa",
+    title: "Maa Manchi Deva",
     subtitle: "మా మంచి దేవా",
     lyricspath: "assets/lyrics/139.txt",
   );
   Book b140 = const Book(
     id: 140,
-    title: "Nee Prema Leka Nivasinchalenu",
+    title: "Nee Prema Leka Nivasimpalenu",
     subtitle: "నీ ప్రేమ లేక నివశించలేను",
     lyricspath: "assets/lyrics/140.txt",
   );
   Book b141 = const Book(
     id: 141,
-    title: "Neevu Sukhama Koraku",
+    title: "Neevu Sukhamu Koru",
     subtitle: "నీవు సుఖము కోరు",
     lyricspath: "assets/lyrics/141.txt",
   );
   Book b142 = const Book(
     id: 142,
-    title: "Aalasayamu Cheyakumaiyaa",
+    title: "Aalasyamu Cheyakumayya",
     subtitle: "ఆలస్యము చేయకుమయ్యా",
     lyricspath: "assets/lyrics/142.txt",
   );
   Book b143 = const Book(
     id: 143,
-    title: "Devaa Ninne Nammithini",
+    title: "Deva Ninne Nammithini",
     subtitle: "దేవా నిన్నే నమ్మితిని",
     lyricspath: "assets/lyrics/143.txt",
   );
   Book b144 = const Book(
     id: 144,
-    title: "Prabhu Naa Nrinayamulai",
+    title: "Prabhu Naa Nirnayamulu",
     subtitle: "ప్రభూ నా నిర్ణయములు",
     lyricspath: "assets/lyrics/144.txt",
   );
   Book b145 = const Book(
     id: 145,
-    title: "Yesayya Naamaame",
+    title: "Yesayya Naamame",
     subtitle: "యేసయ్య నామమే",
     lyricspath: "assets/lyrics/145.txt",
   );
   Book b146 = const Book(
     id: 146,
-    title: "Devuni Aatma Dukham Padutunnadi",
+    title: "Devuni Aathma Dukkhapadunani",
     subtitle: "దేవుని ఆత్మ దుఖ:పడునని",
     lyricspath: "assets/lyrics/146.txt",
   );
@@ -888,7 +888,7 @@ class BooksProvider {
   );
   Book b148 = const Book(
     id: 148,
-    title: "Bethlehem Gramamunandu",
+    title: "Bethlehemu Graamamunandu",
     subtitle: "బెత్లహేము గ్రామమునందు",
     lyricspath: "assets/lyrics/148.txt",
   );
@@ -900,37 +900,37 @@ class BooksProvider {
   );
   Book b150 = const Book(
     id: 150,
-    title: "Melakuvaaga Undumu",
+    title: "Melakuvagaa Vundumu",
     subtitle: "మెలకువగా ఉండుము",
     lyricspath: "assets/lyrics/150.txt",
   );
   Book b151 = const Book(
     id: 151,
-    title: "Yuvakudaa O Yuvati",
+    title: "Yuvakudaa Oo Yuvathi",
     subtitle: "యువకుడా ఓ యువతి",
     lyricspath: "assets/lyrics/151.txt",
   );
   Book b152 = const Book(
     id: 152,
-    title: "Nee Prema Ku Baduluga",
+    title: "Nee Premaku Badhulugaa",
     subtitle: "నీ ప్రేమకు బదులుగా",
     lyricspath: "assets/lyrics/152.txt",
   );
   Book b153 = const Book(
     id: 153,
-    title: "Nee Krupaye Naaku Chalani",
+    title: "Nee Krupaye Naaku Chaalani",
     subtitle: "నీ కృపయే నాకుచాలని",
     lyricspath: "assets/lyrics/153.txt",
   );
   Book b154 = const Book(
     id: 154,
-    title: "Naa Koraku Baadhimpabadiyu",
+    title: "Naa Koraku Bhaadhimpabadiyu",
     subtitle: "నా కొరకు బాధింపబడియు",
     lyricspath: "assets/lyrics/154.txt",
   );
   Book b155 = const Book(
     id: 155,
-    title: "Yesayya Nannu Melakuvaaga",
+    title: "Yesayya Nannu Melakuvagaa",
     subtitle: "యేసయ్యా నన్ను మెలకువగా",
     lyricspath: "assets/lyrics/155.txt",
   );
@@ -942,758 +942,758 @@ class BooksProvider {
   );
   Book b157 = const Book(
     id: 157,
-    title: "Yesukristhu Prabhuvu",
+    title: "Yesu Kreesthu Prabhuvu",
     subtitle: "యేసుక్రీస్తు ప్రభువు",
     lyricspath: "assets/lyrics/157.txt",
   );
   Book b158 = const Book(
     id: 158,
-    title: "Chinnapillalam Yeshu",
+    title: "Chinna Pillalam Yesu",
     subtitle: "చిన్నపిల్లలం యేసు",
     lyricspath: "assets/lyrics/158.txt",
   );
   Book b159 = const Book(
     id: 159,
-    title: "Rarandi Prajelaraa",
+    title: "Raarandi Prajalaara",
     subtitle: "రారండీ ప్రజలారా",
     lyricspath: "assets/lyrics/159.txt",
   );
   Book b160 = const Book(
     id: 160,
-    title: "Kristhu Mana Brathukulu",
+    title: "Kreesthu Mana Brathukulo",
     subtitle: "క్రీస్తు మన బ్రతుకులో",
     lyricspath: "assets/lyrics/160.txt",
   );
   Book b161 = const Book(
     id: 161,
-    title: "Santhoshamantha Yeshu",
+    title: "Santhoshamutho Yesu",
     subtitle: "సంతోషముతో యేసు",
     lyricspath: "assets/lyrics/161.txt",
   );
   Book b162 = const Book(
     id: 162,
-    title: "Ee Shramalemo Shramala",
+    title: "Ee Sramalemo Sramala",
     subtitle: "ఈ శ్రమలేమో శ్రమల",
     lyricspath: "assets/lyrics/162.txt",
   );
   Book b163 = const Book(
     id: 163,
-    title: "Sooryodayamunundi Sooryastamayamu",
+    title: "Suryodhayamunundi Suryasthamayamu",
     subtitle: "సూర్యోదయమునుండి సూర్యాస్తమయము",
     lyricspath: "assets/lyrics/163.txt",
   );
   Book b164 = const Book(
     id: 164,
-    title: "Sthotramu Chellinthu Nenu",
+    title: "Sthothramu Chellinthunu Yesu",
     subtitle: "స్తోత్రము చెల్లింతు నేసు",
     lyricspath: "assets/lyrics/164.txt",
   );
   Book b165 = const Book(
     id: 165,
-    title: "Entha Goppa Krupa",
+    title: "Yentha Goppa Krupa",
     subtitle: "ఎంత గొప్ప కృప",
     lyricspath: "assets/lyrics/165.txt",
   );
   Book b166 = const Book(
     id: 166,
-    title: "Neeve Nabalamu",
+    title: "Neeve Naa Balamu",
     subtitle: "నీవే నాబలము",
     lyricspath: "assets/lyrics/166.txt",
   );
   Book b167 = const Book(
     id: 167,
-    title: "Enthaghoram Enthanaeram",
+    title: "Yentha Ghoram Yentha Neram",
     subtitle: "ఎంతఘోరం ఎంతనేరం",
     lyricspath: "assets/lyrics/167.txt",
   );
   Book b168 = const Book(
     id: 168,
-    title: "Nuthana Vatsaramu",
+    title: "Noothana Vathsaramu",
     subtitle: "నూతన వత్సరము",
     lyricspath: "assets/lyrics/168.txt",
   );
   Book b169 = const Book(
     id: 169,
-    title: "Balavanthudaa Naa Aashrayamaa",
+    title: "Balavanthudaa Naa Aasrayama",
     subtitle: "బలవంతుడా నా ఆశ్రయమా",
     lyricspath: "assets/lyrics/169.txt",
   );
   Book b170 = const Book(
     id: 170,
-    title: "Yesayya Manchidevudaa",
+    title: "Yesayya Manchi Devuda",
     subtitle: "యేసయ్యా మంచిదేవుడా",
     lyricspath: "assets/lyrics/170.txt",
   );
   Book b171 = const Book(
     id: 171,
-    title: "Nijakraisthavudaa Nirlakshyamunu",
+    title: "Nija Kraisthavuda Nirlakshamunu",
     subtitle: "నిజక్రైస్తవుడా నిర్లక్ష్యమును",
     lyricspath: "assets/lyrics/171.txt",
   );
   Book b172 = const Book(
     id: 172,
-    title: "Parishuddudaa Naa Yesuprabhuvaa",
+    title: "Parishuddha Naa Yesu Prabhuva",
     subtitle: "పరిశుద్ధుడా నా యేసుప్రభువా",
     lyricspath: "assets/lyrics/172.txt",
   );
   Book b173 = const Book(
     id: 173,
-    title: "Yesukristhuprabhu Naamalo",
+    title: "Yesu Kreesthu Prabhu Naamamlo",
     subtitle: "యేసుక్రీస్తుప్రభు నామంలో",
     lyricspath: "assets/lyrics/173.txt",
   );
   Book b174 = const Book(
     id: 174,
-    title: "Ekaanta Kutumba Sanghapraardhana",
+    title: "Yekaantha Kutumba Sangha",
     subtitle: "ఏకాంత కుటుంబ సంఘప్రార్ధన",
     lyricspath: "assets/lyrics/174.txt",
   );
   Book b175 = const Book(
     id: 175,
-    title: "Vekuvane Lechedanu",
+    title: "Vekuvane Lechedhanu",
     subtitle: "వేకువనే లేచెదను",
     lyricspath: "assets/lyrics/175.txt",
   );
   Book b176 = const Book(
     id: 176,
-    title: "Neemahimakorake Nanu",
+    title: "Nee Mahima Korake Nanu",
     subtitle: "నీమహిమకొరకే నను",
     lyricspath: "assets/lyrics/176.txt",
   );
   Book b177 = const Book(
     id: 177,
-    title: "Parishuddhatma Tandri Maamadhyaka",
+    title: "Parishuddhaathma Thandri Maa Madhyaku",
     subtitle: "పరిశుద్ధాత్మతండ్రీ మామధ్యకు",
     lyricspath: "assets/lyrics/177.txt",
   );
   Book b178 = const Book(
     id: 178,
-    title: "Devadaaru Vrukshamulu Kulentu",
+    title: "Devadhaaru Vrukshamulu",
     subtitle: "దేవదారు వృక్షములు కూలెను",
     lyricspath: "assets/lyrics/178.txt",
   );
   Book b179 = const Book(
     id: 179,
-    title: "Idi Aatmala Sampadanaa",
+    title: "Idi Aathamala Sampaadhana",
     subtitle: "ఇది ఆత్మల సంపాదనా",
     lyricspath: "assets/lyrics/179.txt",
   );
   Book b180 = const Book(
     id: 180,
-    title: "Sthotramulu Sthotramulu",
+    title: "Sthothramulu Sthothramulu",
     subtitle: "స్తోత్రములు స్తోత్రములు",
     lyricspath: "assets/lyrics/180.txt",
   );
   Book b181 = const Book(
     id: 181,
-    title: "Jeevithamekshanikamainadi Naabrathuke",
+    title: "Jeevithame Kshanikamainadhi",
     subtitle: "జీవితమేక్షణికమైనది నాబ్రతుకే",
     lyricspath: "assets/lyrics/181.txt",
   );
   Book b182 = const Book(
     id: 182,
-    title: "Chivarivaraku Neesannidhilo",
+    title: "Chivarivaraku Nee Sannidhilo",
     subtitle: "చివరివరకు నీసన్నిధిలో",
     lyricspath: "assets/lyrics/182.txt",
   );
   Book b183 = const Book(
     id: 183,
-    title: "Enchaleni Mellu Chesina",
+    title: "Yenchaleni Mellu Chesina",
     subtitle: "ఎంచలేని మేళ్ళు చేసినా",
     lyricspath: "assets/lyrics/183.txt",
   );
   Book b184 = const Book(
     id: 184,
-    title: "Yesayya Dayaamayudavain",
+    title: "Yesayya Dayamayudavaina",
     subtitle: "యేసయ్యా దయామయుడవైన",
     lyricspath: "assets/lyrics/184.txt",
   );
   Book b185 = const Book(
     id: 185,
-    title: "Yesuthonadichedanu Aa Kristhuto",
+    title: "Yesutho Nadachedhanu",
     subtitle: "యేసుతోనడిచెదను ఆ క్రీస్తుతో",
     lyricspath: "assets/lyrics/185.txt",
   );
   Book b186 = const Book(
     id: 186,
-    title: "Thellani Kanthi Challanireyi",
+    title: "Thellani Kaanthi Challanireyi",
     subtitle: "తెల్లని కాంతి చల్లనిరేయి",
     lyricspath: "assets/lyrics/186.txt",
   );
   Book b187 = const Book(
     id: 187,
-    title: "Edabayani Neekrupalo",
+    title: "Yedabaayani Nee Krupalo",
     subtitle: "ఎడబాయని నీకృపలో",
     lyricspath: "assets/lyrics/187.txt",
   );
   //preparing book(s) for Book-5 [188-259]
   Book b188 = const Book(
     id: 188,
-    title: "NULL",
+    title: "Bethlehemulo Pashuvula",
     subtitle: "బెత్లెహేములో పశువుల",
     lyricspath: "assets/lyrics/188.txt",
   );
   Book b189 = const Book(
     id: 189,
-    title: "NULL",
+    title: "Prabhu Yesu Aagamanam",
     subtitle: "ప్రభుయేసు ఆగమనం",
     lyricspath: "assets/lyrics/189.txt",
   );
   Book b190 = const Book(
     id: 190,
-    title: "NULL",
+    title: "Naa Jeevitha Vydhalanundi",
     subtitle: "నా జీవిత వ్యధలనుండి",
     lyricspath: "assets/lyrics/190.txt",
   );
   Book b191 = const Book(
     id: 191,
-    title: "NULL",
+    title: "Yesayya Nee Krupa",
     subtitle: "యేసయ్యా నీ కృప",
     lyricspath: "assets/lyrics/191.txt",
   );
   Book b192 = const Book(
     id: 192,
-    title: "NULL",
+    title: "Naa Avayavaalanni",
     subtitle: "నా అవయవాలన్నీ",
     lyricspath: "assets/lyrics/192.txt",
   );
   Book b193 = const Book(
     id: 193,
-    title: "NULL",
+    title: "Nee Gruham Yesu Kreesthu",
     subtitle: "నీ గృహం యేసుక్రీస్తు",
     lyricspath: "assets/lyrics/193.txt",
   );
   Book b194 = const Book(
     id: 194,
-    title: "NULL",
+    title: "Neevu Naakunte Chaalu",
     subtitle: "నీవు నాకుంటే చాలు",
     lyricspath: "assets/lyrics/194.txt",
   );
   Book b195 = const Book(
     id: 195,
-    title: "NULL",
+    title: "Nee Krupa Nee Krupa",
     subtitle: "నీకృప నీకృప",
     lyricspath: "assets/lyrics/195.txt",
   );
   Book b196 = const Book(
     id: 196,
-    title: "NULL",
+    title: "Maranamante Bayamu",
     subtitle: "మరణమంటే భయము",
     lyricspath: "assets/lyrics/196.txt",
   );
   Book b197 = const Book(
     id: 197,
-    title: "NULL",
+    title: "Nedu Poyi Draakshathotalo",
     subtitle: "నేడుపోయి ద్రాక్షతోటలో",
     lyricspath: "assets/lyrics/197.txt",
   );
   Book b198 = const Book(
     id: 198,
-    title: "NULL",
+    title: "Anaadhalaku Naadhudaa",
     subtitle: "అనాధలకు నాధుడా",
     lyricspath: "assets/lyrics/198.txt",
   );
   Book b199 = const Book(
     id: 199,
-    title: "NULL",
+    title: "Munupunna Vedi",
     subtitle: "మునుపున్న వేడీ",
     lyricspath: "assets/lyrics/199.txt",
   );
   Book b200 = const Book(
     id: 200,
-    title: "NULL",
+    title: "Viswasi Modhatigaa",
     subtitle: "విశ్వాసీ మొదటిగా",
     lyricspath: "assets/lyrics/200.txt",
   );
   Book b201 = const Book(
     id: 201,
-    title: "NULL",
+    title: "Kanulunnantha Varake",
     subtitle: "కనులున్నంత వరకే",
     lyricspath: "assets/lyrics/201.txt",
   );
   Book b202 = const Book(
     id: 202,
-    title: "NULL",
+    title: "Yesayya Nee Swaramu",
     subtitle: "యేసయ్య నీ స్వరము",
     lyricspath: "assets/lyrics/202.txt",
   );
   Book b203 = const Book(
     id: 203,
-    title: "NULL",
+    title: "Jaaligala Deva Krupagala Thandri",
     subtitle: "జాలిగలదేవా కృపగలతండ్రీ",
     lyricspath: "assets/lyrics/203.txt",
   );
   Book b204 = const Book(
     id: 204,
-    title: "NULL",
+    title: "Ee Vivaaham Madhuram",
     subtitle: "ఈ వివాహం మధురము",
     lyricspath: "assets/lyrics/204.txt",
   );
   Book b205 = const Book(
     id: 205,
-    title: "NULL",
+    title: "Parishuddhamaina Vivahamu",
     subtitle: "పరిశుద్ధమైన వివాహము",
     lyricspath: "assets/lyrics/205.txt",
   );
   Book b206 = const Book(
     id: 206,
-    title: "NULL",
+    title: "Sthuthulu Arpinthunu",
     subtitle: "స్తుతులు అర్పింతును",
     lyricspath: "assets/lyrics/206.txt",
   );
   Book b207 = const Book(
     id: 207,
-    title: "NULL",
+    title: "Kudivaipunakunu",
     subtitle: "కుడివైపునకును ఎడమవైపునకును",
     lyricspath: "assets/lyrics/207.txt",
   );
   Book b208 = const Book(
     id: 208,
-    title: "NULL",
+    title: "Sodhara Sodhari Janulaara",
     subtitle: "సోదర సోదరి జనులారా",
     lyricspath: "assets/lyrics/208.txt",
   );
   Book b209 = const Book(
     id: 209,
-    title: "NULL",
+    title: "Yesayya Nee Korake",
     subtitle: "యేసయ్యా నీకొరకే",
     lyricspath: "assets/lyrics/209.txt",
   );
   Book b210 = const Book(
     id: 210,
-    title: "NULL",
+    title: "Kanikara Sampannudaa Karuna",
     subtitle: "కనికరసంపన్నుడా కరుణా",
     lyricspath: "assets/lyrics/210.txt",
   );
   Book b211 = const Book(
     id: 211,
-    title: "NULL",
+    title: "Dayaa Mayudavu",
     subtitle: "దయా మయుడవు",
     lyricspath: "assets/lyrics/211.txt",
   );
   Book b212 = const Book(
     id: 212,
-    title: "NULL",
+    title: "Priyamaina Sanghamaa",
     subtitle: "ప్రియమైన సంఘమా",
     lyricspath: "assets/lyrics/212.txt",
   );
   Book b213 = const Book(
     id: 213,
-    title: "NULL",
+    title: "Yenthativaadavu Yenni",
     subtitle: "ఎంతటివాడవు ఎన్ని",
     lyricspath: "assets/lyrics/213.txt",
   );
   Book b214 = const Book(
     id: 214,
-    title: "NULL",
+    title: "Nee Krupa Naaku Chaalayya",
     subtitle: "నీకృపనాకు చాలయ్యా",
     lyricspath: "assets/lyrics/214.txt",
   );
   Book b215 = const Book(
     id: 215,
-    title: "NULL",
+    title: "Sangathulanu Paipaine",
     subtitle: "సంగతులను పైపైనే",
     lyricspath: "assets/lyrics/215.txt",
   );
   Book b216 = const Book(
     id: 216,
-    title: "NULL",
+    title: "Kutumbhamu Kattalani",
     subtitle: "కుటుంబము కట్టాలని",
     lyricspath: "assets/lyrics/216.txt",
   );
   Book b217 = const Book(
     id: 217,
-    title: "NULL",
+    title: "Neevu Thelivitho",
     subtitle: "నీవు తెలివితో",
     lyricspath: "assets/lyrics/217.txt",
   );
   Book b218 = const Book(
     id: 218,
-    title: "NULL",
+    title: "Jayamu Jayamu",
     subtitle: "జయము జయము",
     lyricspath: "assets/lyrics/218.txt",
   );
   Book b219 = const Book(
     id: 219,
-    title: "NULL",
+    title: "Yesu Prabhu Nanu",
     subtitle: "యేసుప్రభూ నను",
     lyricspath: "assets/lyrics/219.txt",
   );
   Book b220 = const Book(
     id: 220,
-    title: "NULL",
+    title: "Yesu Naa Raja",
     subtitle: "యేసూ నా రాజా",
     lyricspath: "assets/lyrics/220.txt",
   );
   Book b221 = const Book(
     id: 221,
-    title: "NULL",
+    title: "Sundhara Sumadhura",
     subtitle: "సుందర సుమధుర",
     lyricspath: "assets/lyrics/221.txt",
   );
   Book b222 = const Book(
     id: 222,
-    title: "NULL",
+    title: "Prardhinchuvaaru",
     subtitle: "ప్రార్థించువారు పాపముచేయలేరు",
     lyricspath: "assets/lyrics/222.txt",
   );
   Book b223 = const Book(
     id: 223,
-    title: "NULL",
+    title: "Yesu Nee Premaa",
     subtitle: "యేసు నీ ప్రేమా",
     lyricspath: "assets/lyrics/223.txt",
   );
   Book b224 = const Book(
     id: 224,
-    title: "NULL",
+    title: "Siluva Maranamu",
     subtitle: "సిలువ మరణము",
     lyricspath: "assets/lyrics/224.txt",
   );
   Book b225 = const Book(
     id: 225,
-    title: "NULL",
+    title: "Athitwaraga Naakai",
     subtitle: "అతిత్వరగా నాకై",
     lyricspath: "assets/lyrics/225.txt",
   );
   Book b226 = const Book(
     id: 226,
-    title: "NULL",
+    title: "Yesu Kreesthu Prabhuva",
     subtitle: "యేసుక్రీస్తు ప్రభువా",
     lyricspath: "assets/lyrics/226.txt",
   );
   Book b227 = const Book(
     id: 227,
-    title: "NULL",
+    title: "Sanghamaa Sanghamaa",
     subtitle: "సంఘమా సంఘమా",
     lyricspath: "assets/lyrics/227.txt",
   );
   Book b228 = const Book(
     id: 228,
-    title: "NULL",
+    title: "Nee Krupa Naaku Chaalu",
     subtitle: "నీ కృప నాకు చాలు",
     lyricspath: "assets/lyrics/228.txt",
   );
   Book b229 = const Book(
     id: 229,
-    title: "NULL",
+    title: "Yendhuko Inthagaa",
     subtitle: "ఎందుకో ఇంతగా",
     lyricspath: "assets/lyrics/229.txt",
   );
   Book b230 = const Book(
     id: 230,
-    title: "NULL",
+    title: "Yesu Kreesthu Prabhu",
     subtitle: "యేసుక్రీస్తు ప్రభు",
     lyricspath: "assets/lyrics/230.txt",
   );
   Book b231 = const Book(
     id: 231,
-    title: "NULL",
+    title: "Yesu Prabhuvu Manatho",
     subtitle: "యేసు ప్రభువు మనతో",
     lyricspath: "assets/lyrics/231.txt",
   );
   Book b232 = const Book(
     id: 232,
-    title: "NULL",
+    title: "Kanulu Paiketthi Chudumu",
     subtitle: "కనులు పైకెత్తి చూడుము",
     lyricspath: "assets/lyrics/232.txt",
   );
   Book b233 = const Book(
     id: 233,
-    title: "NULL",
+    title: "Manushula Pattu",
     subtitle: "మనుష్యుల పట్టు",
     lyricspath: "assets/lyrics/233.txt",
   );
   Book b234 = const Book(
     id: 234,
-    title: "NULL",
+    title: "Yesu Prabhuvu Manchi Devudu",
     subtitle: "యేసుప్రభువు మంచిదేవుడు",
     lyricspath: "assets/lyrics/234.txt",
   );
   Book b235 = const Book(
     id: 235,
-    title: "NULL",
+    title: "Sramadinamuna Digulupadi",
     subtitle: "శ్రమదినమున దిగులుపడి",
     lyricspath: "assets/lyrics/235.txt",
   );
   Book b236 = const Book(
     id: 236,
-    title: "NULL",
+    title: "Kapatapu Nadathanu",
     subtitle: "కపటపు నడతను",
     lyricspath: "assets/lyrics/236.txt",
   );
   Book b237 = const Book(
     id: 237,
-    title: "NULL",
+    title: "Aanandhamutho Yesu Prabhuni",
     subtitle: "ఆనందముతో యేసుప్రభుని",
     lyricspath: "assets/lyrics/237.txt",
   );
   Book b238 = const Book(
     id: 238,
-    title: "NULL",
+    title: "Yentha Paapinaina Yesayya",
     subtitle: "ఎంత పాపినైన యేసయ్య",
     lyricspath: "assets/lyrics/238.txt",
   );
   Book b239 = const Book(
     id: 239,
-    title: "NULL",
+    title: "Manamundhu Naduchuvaadu",
     subtitle: "మనముందు నడచువాడు",
     lyricspath: "assets/lyrics/239.txt",
   );
   Book b240 = const Book(
     id: 240,
-    title: "NULL",
+    title: "Yesu Prabhuni Raakada",
     subtitle: "యేసుప్రభుని రాకడ",
     lyricspath: "assets/lyrics/240.txt",
   );
   Book b241 = const Book(
     id: 241,
-    title: "NULL",
+    title: "Saagipoyedhan Saagipoyedhan",
     subtitle: "సాగిపోయెదన్ సాగిపోయెదన్",
     lyricspath: "assets/lyrics/241.txt",
   );
   Book b242 = const Book(
     id: 242,
-    title: "NULL",
+    title: "Mahimaraaja Divyatheja",
     subtitle: "మహిమరాజా దివ్యతేజా",
     lyricspath: "assets/lyrics/242.txt",
   );
   Book b243 = const Book(
     id: 243,
-    title: "NULL",
+    title: "Yesu Rakthamulo Ne",
     subtitle: "యేసురక్తములో నే కడుగబడితిని",
     lyricspath: "assets/lyrics/243.txt",
   );
   Book b244 = const Book(
     id: 244,
-    title: "NULL",
+    title: "Chedipoyina Roginayaa",
     subtitle: "చెడిపోయిన రోగినయా",
     lyricspath: "assets/lyrics/244.txt",
   );
   Book b245 = const Book(
     id: 245,
-    title: "NULL",
+    title: "Saagipovutaku Nee Krupa",
     subtitle: "సాగిపోవుటకు నీ కృపచూపుమయా",
     lyricspath: "assets/lyrics/245.txt",
   );
   Book b246 = const Book(
     id: 246,
-    title: "NULL",
+    title: "Neevante Naku Premayaa",
     subtitle: "నీవంటే నాకు ప్రేమయా",
     lyricspath: "assets/lyrics/246.txt",
   );
   Book b247 = const Book(
     id: 247,
-    title: "NULL",
+    title: "Naa Sontha Thotanu",
     subtitle: "నా సొంత తోటను",
     lyricspath: "assets/lyrics/247.txt",
   );
   Book b248 = const Book(
     id: 248,
-    title: "NULL",
+    title: "Kutumbamantha Rakshimpabadi",
     subtitle: "కుటుంబమంతా రక్షింపబడి",
     lyricspath: "assets/lyrics/248.txt",
   );
   Book b249 = const Book(
     id: 249,
-    title: "NULL",
+    title: "Prabhu Yesu Kreesthu Prema",
     subtitle: "ప్రభుయేసు క్రీస్తు ప్రేమ",
     lyricspath: "assets/lyrics/249.txt",
   );
   Book b250 = const Book(
     id: 250,
-    title: "NULL",
+    title: "Naa Yesu Naamamu Yentho",
     subtitle: "నాయేసు నామము ఎంతో",
     lyricspath: "assets/lyrics/250.txt",
   );
   Book b251 = const Book(
     id: 251,
-    title: "NULL",
+    title: "Vijayamu Nee Swanthamaya",
     subtitle: "విజయము నీ స్వంతమయా",
     lyricspath: "assets/lyrics/251.txt",
   );
   Book b252 = const Book(
     id: 252,
-    title: "NULL",
+    title: "Yesayya Nee Krupa",
     subtitle: "యేసయ్యా నీకృప గ్రహియించలేను",
     lyricspath: "assets/lyrics/252.txt",
   );
   Book b253 = const Book(
     id: 253,
-    title: "NULL",
+    title: "Okanaadu Andhakaaram",
     subtitle: "ఒకనాడు అంధకారం",
     lyricspath: "assets/lyrics/253.txt",
   );
   Book b254 = const Book(
     id: 254,
-    title: "NULL",
+    title: "Ninu Sthuthiyinchutaku",
     subtitle: "నిను స్తుతియించుటకు",
     lyricspath: "assets/lyrics/254.txt",
   );
   Book b255 = const Book(
     id: 255,
-    title: "NULL",
+    title: "Yesayya Maata Vinandi",
     subtitle: "యేసయ్య మాట వినండి",
     lyricspath: "assets/lyrics/255.txt",
   );
   Book b256 = const Book(
     id: 256,
-    title: "NULL",
+    title: "Yesu Twaraga Vachuchundenu",
     subtitle: "యేసు త్వరగ వచ్చుచుండెను",
     lyricspath: "assets/lyrics/256.txt",
   );
   Book b257 = const Book(
     id: 257,
-    title: "NULL",
+    title: "Antha Neeku Vyethirekame",
     subtitle: "అంతా నీకు వ్యతిరేకమే",
     lyricspath: "assets/lyrics/257.txt",
   );
   Book b258 = const Book(
     id: 258,
-    title: "NULL",
+    title: "Yesu Kreesthu Prabhuku",
     subtitle: "యేసుక్రీస్తు ప్రభుకు ఆరాధన",
     lyricspath: "assets/lyrics/258.txt",
   );
   Book b259 = const Book(
     id: 259,
-    title: "NULL",
+    title: "Saagipothundi Mana Prardhana",
     subtitle: "సాగిపోతుంది మన ప్రార్ధన",
     lyricspath: "assets/lyrics/259.txt",
   );
   Book b260 = const Book(
     id: 260,
-    title: "NULL",
+    title: "Yesuvaipe Chuchuchu",
     subtitle: "యేసువైపే చూచుచూ",
     lyricspath: "assets/lyrics/260.txt",
   );
   Book b261 = const Book(
     id: 261,
-    title: "NULL",
+    title: "Devuni Vaakyam Parishuddha",
     subtitle: "దేవుని వాక్యము పరిశుద్ధ",
     lyricspath: "assets/lyrics/261.txt",
   );
   Book b262 = const Book(
     id: 262,
-    title: "NULL",
+    title: "Prabhu Yesu Rakthamulo",
     subtitle: "ప్రభుయేసు రక్తములో",
     lyricspath: "assets/lyrics/262.txt",
   );
   Book b263 = const Book(
     id: 263,
-    title: "NULL",
+    title: "Nannu Aakarshinchumu",
     subtitle: "నన్ను ఆకర్షించుము",
     lyricspath: "assets/lyrics/263.txt",
   );
   Book b264 = const Book(
     id: 264,
-    title: "NULL",
+    title: "Ee Punaadhi Yesu Kreesthe",
     subtitle: "ఈ పునాది యేసుక్రీస్తే",
     lyricspath: "assets/lyrics/264.txt",
   );
   Book b265 = const Book(
     id: 265,
-    title: "NULL",
+    title: "Nee Dhonenu Lothunaku",
     subtitle: "నీ దోనెను లోతునకు",
     lyricspath: "assets/lyrics/265.txt",
   );
   Book b266 = const Book(
     id: 266,
-    title: "NULL",
+    title: "Yesayyaa Naa Kanna Thandrivi",
     subtitle: "యేసయ్యా ఆ నా కన్నతండ్రివీ ",
     lyricspath: "assets/lyrics/266.txt",
   );
   Book b267 = const Book(
     id: 267,
-    title: "NULL",
+    title: "Yechatakellagalanu",
     subtitle: "ఎచటకెళ్ళగలనయా కృపామయా",
     lyricspath: "assets/lyrics/267.txt",
   );
   Book b268 = const Book(
     id: 268,
-    title: "NULL",
+    title: "Vontariga Saaguchuntivaa",
     subtitle: "ఒంటరిగా సాగుచుంటివా",
     lyricspath: "assets/lyrics/268.txt",
   );
   Book b269 = const Book(
     id: 269,
-    title: "NULL",
+    title: "Dayagaligina Raajuvu",
     subtitle: "దయగలిగిన రాజువు ఘనుడవు",
     lyricspath: "assets/lyrics/269.txt",
   );
   Book b270 = const Book(
     id: 270,
-    title: "NULL",
+    title: "Prathi Dinamu Prathi",
     subtitle: "ప్రతిదినము ప్రతి విషయములో",
     lyricspath: "assets/lyrics/270.txt",
   );
   Book b271 = const Book(
     id: 271,
-    title: "NULL",
+    title: "Naa Ginnenindi Porluchunnadhi",
     subtitle: "నా గిన్నెనిండి పొర్లుచున్నది",
     lyricspath: "assets/lyrics/271.txt",
   );
   Book b272 = const Book(
     id: 272,
-    title: "NULL",
+    title: "Sthuthimchedamu",
     subtitle: "స్తుతించెదము పూజించెదము",
     lyricspath: "assets/lyrics/272.txt",
   );
   Book b273 = const Book(
     id: 273,
-    title: "NULL",
+    title: "Sthuthulu Chellimpa",
     subtitle: "స్తుతులు చెల్లింప నోరిచ్చినావే",
     lyricspath: "assets/lyrics/273.txt",
   );
   Book b274 = const Book(
     id: 274,
-    title: "NULL",
+    title: "Yesayya Naa Prana",
     subtitle: "యేసయ్యా నా ప్రాణ",
     lyricspath: "assets/lyrics/274.txt",
   );
   Book b275 = const Book(
     id: 275,
-    title: "NULL",
+    title: "Ahamkaaramu Veedumu",
     subtitle: "అహంకారమును వీడుము",
     lyricspath: "assets/lyrics/275.txt",
   );
   Book b276 = const Book(
     id: 276,
-    title: "NULL",
+    title: "Yehova Deva Yesu Prabhu",
     subtitle: "యెహోవా దేవా యేసుప్రభూ",
     lyricspath: "assets/lyrics/276.txt",
   );
   Book b277 = const Book(
     id: 277,
-    title: "NULL",
+    title: "Yesu Kreesthu Prabhuvu",
     subtitle: "యేసుక్రీస్తుప్రభువు పాపవిమోచకుడు",
     lyricspath: "assets/lyrics/277.txt",
   );
   Book b278 = const Book(
     id: 278,
-    title: "NULL",
+    title: "Devuni Maata Vinumu",
     subtitle: "దేవుని మాట వినుము",
     lyricspath: "assets/lyrics/278.txt",
   );
   Book b279 = const Book(
     id: 279,
-    title: "NULL",
+    title: "Yesu Naa Deva",
     subtitle: "యేసు నా దేవ",
     lyricspath: "assets/lyrics/279.txt",
   );
   Book b280 = const Book(
     id: 280,
-    title: "NULL",
+    title: "Viswasiki Swapariksha",
     subtitle: "విశ్వసికి స్వపరీక్ష",
     lyricspath: "assets/lyrics/280.txt",
   );
   Book b281 = const Book(
     id: 281,
-    title: "NULL",
+    title: "Yesu Prabhu Neevu Chaalaya",
     subtitle: "యేసుప్రభూ నీవు చాలయ్యా",
     lyricspath: "assets/lyrics/281.txt",
   );
   Book b282 = const Book(
     id: 282,
-    title: "NULL",
+    title: "Lemmu Tejarillumu",
     subtitle: "లెమ్ము తేజరిల్లుము",
     lyricspath: "assets/lyrics/282.txt",
   );
