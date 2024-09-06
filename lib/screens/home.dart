@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:songsapp/engine/books_provider.dart';
 import 'package:songsapp/screens/albumscreen.dart';
 import 'package:songsapp/screens/bookscreen.dart';
-import 'package:songsapp/screens/lyricscreen.dart';
 import 'package:songsapp/screens/searchscreen.dart';
 
 class Home extends StatefulWidget {
@@ -15,12 +13,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int selectedIndex = 0;
   List<Widget> pages = [];
-  // BooksProvider bp = BooksProvider();
   @override
   void initState() {
     super.initState();
     pages = [
-      // LyricsPage(title: bp.b1.title, lyricsPath: bp.b1.lyricspath),
       const AlbumPage(),
       const SearchPage(),
       const BookPage(),

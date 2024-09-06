@@ -30,10 +30,8 @@ class _SongsPageState extends State<SongsPage> {
         physics: const BouncingScrollPhysics(),
         itemCount: widget.songs.length,
         itemBuilder: (context, index) => Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-          child: GestureDetector(
-              onTap: () {}, child: SongCard(song: widget.songs[index])),
-        ),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            child: SongCard(song: widget.songs[index])),
       ),
     );
   }

@@ -55,7 +55,6 @@ class _LyricsCardState extends State<LyricsCard> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: Row(
-                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
                     child: Text(
@@ -73,10 +72,15 @@ class _LyricsCardState extends State<LyricsCard> {
                           _fontSize = 14;
                           update();
                         },
-                        child: const Text(
-                          "Aa",
-                          style: TextStyle(
-                            fontSize: 12,
+                        child: Container(
+                          height: 30,
+                          width: 30,
+                          alignment: Alignment.center,
+                          child: const Text(
+                            "Aa",
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
                           ),
                         ),
                       ),
@@ -88,10 +92,15 @@ class _LyricsCardState extends State<LyricsCard> {
                           _fontSize = 18;
                           update();
                         },
-                        child: const Text(
-                          "Aa",
-                          style: TextStyle(
-                            fontSize: 15,
+                        child: Container(
+                          height: 30,
+                          width: 30,
+                          alignment: Alignment.center,
+                          child: const Text(
+                            "Aa",
+                            style: TextStyle(
+                              fontSize: 15,
+                            ),
                           ),
                         ),
                       ),
@@ -100,13 +109,18 @@ class _LyricsCardState extends State<LyricsCard> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          _fontSize = 20;
+                          _fontSize = 22;
                           update();
                         },
-                        child: const Text(
-                          "Aa",
-                          style: TextStyle(
-                            fontSize: 20,
+                        child: Container(
+                          height: 30,
+                          width: 30,
+                          alignment: Alignment.center,
+                          child: const Text(
+                            "Aa",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
                           ),
                         ),
                       ),

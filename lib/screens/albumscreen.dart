@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:songsapp/engine.dart';
 import 'package:songsapp/models/album.dart';
+import 'package:songsapp/screens/aboutscreen.dart';
 import 'package:songsapp/screens/songscreen.dart';
 import 'package:songsapp/widgets/albumcard.dart';
 
@@ -29,6 +30,23 @@ class _AlbumPageState extends State<AlbumPage> {
         ),
         centerTitle: true,
         automaticallyImplyLeading: false,
+        actions: [
+          Container(
+              margin: const EdgeInsets.symmetric(horizontal: 3),
+              child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AboutPage(),
+                      ),
+                    );
+                  },
+                  icon: const Icon(
+                    Icons.info,
+                    size: 35,
+                  )))
+        ],
       ),
       body: ListView.builder(
         padding: const EdgeInsets.only(top: 10),
