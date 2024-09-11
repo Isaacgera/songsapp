@@ -15,7 +15,7 @@ class AboutPage extends StatelessWidget {
             ),
           ),
           centerTitle: true,
-          automaticallyImplyLeading: false,
+          // automaticallyImplyLeading: false,
         ),
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),

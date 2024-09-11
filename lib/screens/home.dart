@@ -17,7 +17,12 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     pages = [
-      const AlbumPage(),
+      AlbumPage(
+        onChangeIndex: (int i) {
+          selectedIndex = i;
+          updatePage();
+        },
+      ),
       const SearchPage(),
       const BookPage(),
     ];
@@ -25,6 +30,10 @@ class _HomeState extends State<Home> {
 
   void updatePage() {
     setState(() {});
+  }
+
+  void changeIndex(int i) {
+    selectedIndex = i;
   }
 
   double getOpacity(int index) {

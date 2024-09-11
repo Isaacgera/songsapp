@@ -21,7 +21,7 @@ class _BookPageState extends State<BookPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "Books",
+            "Songs Book",
             style: GoogleFonts.inconsolata(
               fontSize: 28,
             ),
