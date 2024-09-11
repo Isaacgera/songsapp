@@ -18,7 +18,7 @@ class LyricsPage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        automaticallyImplyLeading: false,
+        // automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
           child:

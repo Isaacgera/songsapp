@@ -84,9 +84,6 @@ class _LyricsCardState extends State<LyricsCard> {
                           ),
                         ),
                       ),
-                      const SizedBox(
-                        width: 10,
-                      ),
                       GestureDetector(
                         onTap: () {
                           _fontSize = 18;
@@ -103,9 +100,6 @@ class _LyricsCardState extends State<LyricsCard> {
                             ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 10,
                       ),
                       GestureDetector(
                         onTap: () {

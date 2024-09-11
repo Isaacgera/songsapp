@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:songsapp/models/song.dart';
+import 'package:songsapp/screens/songfullscreen.dart';
 import 'package:songsapp/widgets/songcard.dart';
 
 class SongsPage extends StatefulWidget {
@@ -23,7 +24,7 @@ class _SongsPageState extends State<SongsPage> {
           ),
         ),
         centerTitle: true,
-        automaticallyImplyLeading: false,
+        // automaticallyImplyLeading: false,
       ),
       body: ListView.builder(
         padding: const EdgeInsets.only(top: 10),
@@ -31,7 +32,15 @@ class _SongsPageState extends State<SongsPage> {
         itemCount: widget.songs.length,
         itemBuilder: (context, index) => Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            child: SongCard(song: widget.songs[index])),
+            child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              SongFullPage(song: widget.songs[index])));
+                },
+                child: SongCard(song: widget.songs[index]))),
       ),
     );
   }

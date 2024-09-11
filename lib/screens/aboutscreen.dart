@@ -83,7 +83,7 @@ class AboutPage extends StatelessWidget {
                       Transform(
                         transform: Matrix4.translationValues(0, -8, 0),
                         child: Text(
-                          "కీ.శే. పర్వతరెడ్డి డేవిడ్ కోటేశ్వరరావు గారు",
+                          "కీ.శే.పర్వతరెడ్డి డేవిడ్ కోటేశ్వరరావు గారు",
                           style: GoogleFonts.inconsolata(
                             fontSize: 16,
                           ),
@@ -134,7 +134,7 @@ class AboutPage extends StatelessWidget {
                       Transform(
                         transform: Matrix4.translationValues(0, -28, 0),
                         child: Text(
-                          "రెవ.డా. దోమతోటి సర్వేశ్వరరావు గారు",
+                          "రెవ.డా.దోమతోటి సర్వేశ్వరరావు గారు",
                           style: GoogleFonts.inconsolata(
                             fontSize: 16,
                           ),
@@ -179,13 +179,13 @@ class AboutPage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "ఈ పాటలు విని, నేర్చుకోని, పాడుట వలన ప్రభువుని మహిమ పరచండి. ",
+                          "ఈ పాటలు విని, నేర్చుకోని,పాడుట వలన ప్రభువుని మహిమ పరచండి.",
                           style: GoogleFonts.inconsolata(
                             fontSize: 16,
                           ),
                         ),
                         Text(
-                          "ఈ పాటలు మీకు ప్రభువు యొక్క సమాధానం, సంతోషం, శాంతి, సమృద్ధి మరియు మన ప్రభువు యొక్క ఆత్మను  అనుగ్రహించును గాక. ",
+                          "ఈ పాటలు మీకు ప్రభువు యొక్క సమాధానం,సంతోషం,శాంతి,సమృద్ధి మరియు మన ప్రభువు యొక్క ఆత్మను అనుగ్రహించును గాక.",
                           style: GoogleFonts.inconsolata(
                             fontSize: 16,
                           ),
@@ -274,13 +274,13 @@ class AboutPage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "4-15-126/72, బాబు జగజ్జీవన్ రామ్ కాలనీ, 2వ లైను అమరావతి రోడ్, గుంటూరు - 522002.",
+                          "4-15-126/72,బాబు జగజ్జీవన్ రామ్ కాలనీ,2వ లైను అమరావతి రోడ్,గుంటూరు-522002.",
                           style: GoogleFonts.inconsolata(
                             fontSize: 16,
                           ),
                         ),
                         Text(
-                          "ఫోన్ : 9553707730, 9494414941",
+                          "ఫోన్:9553707730,9494414941",
                           style: GoogleFonts.inconsolata(
                             fontSize: 16,
                           ),
