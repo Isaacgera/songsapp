@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:songsapp/engine/audioplayer_provider.dart';
 import 'package:songsapp/models/song.dart';
 import 'package:songsapp/widgets/lyricscard.dart';
 
@@ -12,8 +14,22 @@ class SongFullPage extends StatefulWidget {
 }
 
 class _SongFullPageState extends State<SongFullPage> {
+  // @override
+  // void setState(VoidCallback fn) {
+  //   // TODO: implement setState
+  //   super.setState(fn);
+  // }
+
+  String formatTime(Duration duration) {
+    String twoDigitSec =
+        duration.inSeconds.remainder(60).toString().padLeft(2, '0');
+    String formatTime = "${duration.inMinutes}:$twoDigitSec";
+    return formatTime;
+  }
+
   @override
   Widget build(BuildContext context) {
+    final value = Provider.of<AudioPlayerProvider>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -104,12 +120,16 @@ class _SongFullPageState extends State<SongFullPage> {
                         )),
                         child: Slider(
                           min: 0,
-                          max: 100,
-                          value: 50,
+                          max: value.totalDuratioon.inSeconds.toDouble(),
+                          value: value.currentDuration.inSeconds.toDouble(),
                           thumbColor: Colors.black87,
                           activeColor: Colors.black45,
-                          onChanged: (double value) {
-                            print("Slider changed");
+                          onChanged: (val) {
+                            // value.currentDuration =
+                            //     Duration(seconds: val.toInt());
+                          },
+                          onChangeEnd: (val) {
+                            value.seek(Duration(seconds: val.toInt()));
                           },
                         ),
                       ),
@@ -122,13 +142,13 @@ class _SongFullPageState extends State<SongFullPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "00:00",
+                              formatTime(value.currentDuration),
                               style: GoogleFonts.inconsolata(
                                 fontSize: 14,
                               ),
                             ),
                             Text(
-                              "05:00",
+                              formatTime(value.totalDuratioon),
                               style: GoogleFonts.inconsolata(
                                 fontSize: 14,
                               ),
@@ -149,14 +169,40 @@ class _SongFullPageState extends State<SongFullPage> {
                               icon:
                                   const Icon(Icons.shuffle_rounded, size: 50)),
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                value.playPreviousSong();
+                                if (value.currentSong != widget.song) {
+                                  Navigator.pushReplacement<void, void>(
+                                    context,
+                                    MaterialPageRoute<void>(
+                                      builder: (BuildContext context) =>
+                                          SongFullPage(song: value.currentSong),
+                                    ),
+                                  );
+                                }
+                              },
                               icon: const Icon(Icons.skip_previous_rounded,
                                   size: 50)),
                           IconButton(
-                              onPressed: () {},
-                              icon: const Icon(Icons.pause_outlined, size: 50)),
+                              onPressed: () {
+                                value.pauseOrResume();
+                              },
+                              icon: Icon(
+                                  value.isPlaying
+                                      ? Icons.pause_outlined
+                                      : Icons.play_arrow_rounded,
+                                  size: 50)),
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                value.playNextSong();
+                                Navigator.pushReplacement<void, void>(
+                                  context,
+                                  MaterialPageRoute<void>(
+                                    builder: (BuildContext context) =>
+                                        SongFullPage(song: value.currentSong),
+                                  ),
+                                );
+                              },
                               icon: const Icon(Icons.skip_next_rounded,
                                   size: 50)),
                           IconButton(

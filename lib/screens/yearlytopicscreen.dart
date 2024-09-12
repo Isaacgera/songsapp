@@ -71,8 +71,8 @@ class _YearlyTopicsPageState extends State<YearlyTopicsPage> {
       rows.add(TableRow(
           decoration: const BoxDecoration(
             color: Colors.black12,
-            borderRadius: BorderRadius.only(
-                topRight: Radius.circular(6), topLeft: Radius.circular(6)),
+            // borderRadius: BorderRadius.only(
+            //     topRight: Radius.circular(6), topLeft: Radius.circular(6)),
           ),
           children: [
             Padding(
@@ -146,7 +146,7 @@ class _YearlyTopicsPageState extends State<YearlyTopicsPage> {
       ),
       body: Center(
         child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 8),
+          margin: const EdgeInsets.only(left: 8, right: 8, bottom: 8),
           child: SingleChildScrollView(child: createTable()),
         ),
       ),

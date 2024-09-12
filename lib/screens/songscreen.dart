@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:songsapp/engine/audioplayer_provider.dart';
 import 'package:songsapp/models/song.dart';
 import 'package:songsapp/screens/songfullscreen.dart';
 import 'package:songsapp/widgets/songcard.dart';
@@ -15,6 +17,7 @@ class SongsPage extends StatefulWidget {
 class _SongsPageState extends State<SongsPage> {
   @override
   Widget build(BuildContext context) {
+    final value = Provider.of<AudioPlayerProvider>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -34,13 +37,21 @@ class _SongsPageState extends State<SongsPage> {
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: GestureDetector(
                 onTap: () {
+                  if (!value.isPlaying) {
+                    value.currentSongIndex = index;
+                    value.play();
+                  } else if (value.currentSong.title !=
+                      widget.songs[index].title) {
+                    value.currentSongIndex = index;
+                    value.play();
+                  }
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
                               SongFullPage(song: widget.songs[index])));
                 },
-                child: SongCard(song: widget.songs[index]))),
+                child: SongCard(song: widget.songs[index], index: index))),
       ),
     );
   }

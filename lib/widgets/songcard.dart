@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:songsapp/engine/audioplayer_provider.dart';
 import 'package:songsapp/models/song.dart';
 import 'package:songsapp/screens/lyricscreen.dart';
 
 class SongCard extends StatefulWidget {
-  const SongCard({super.key, required this.song});
+  const SongCard({super.key, required this.song, required this.index});
 
   final Song song;
+  final int index;
 
   @override
   State<SongCard> createState() => _SongCardState();
@@ -15,6 +18,8 @@ class SongCard extends StatefulWidget {
 class _SongCardState extends State<SongCard> {
   @override
   Widget build(BuildContext context) {
+    final value = Provider.of<AudioPlayerProvider>(context);
+
     return Container(
       decoration: const BoxDecoration(
         color: Colors.black12,
@@ -53,9 +58,10 @@ class _SongCardState extends State<SongCard> {
                     ),
                   ),
                   Transform(
-                    transform: Matrix4.translationValues(0, -4, 0),
+                    transform: Matrix4.translationValues(0, -2, 0),
                     child: Text(
-                      "Duration.",
+                      overflow: TextOverflow.ellipsis,
+                      widget.song.subtitle,
                       textAlign: TextAlign.left,
                       style: GoogleFonts.inconsolata(
                         fontSize: 12,
@@ -93,12 +99,30 @@ class _SongCardState extends State<SongCard> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    print("Play Clicked");
+                    print("Play Clicked ");
+                    if (value.isPlaying) {
+                      if (value.currentSong.title == widget.song.title) {
+                        value.pause();
+                      } else {
+                        value.currentSongIndex = widget.index;
+                        value.play();
+                      }
+                    } else {
+                      if (value.currentSong.title == widget.song.title) {
+                        value.resume();
+                      } else {
+                        value.currentSongIndex = widget.index;
+                        value.play();
+                      }
+                    }
                   },
-                  child: const Opacity(
+                  child: Opacity(
                     opacity: 0.5,
                     child: Icon(
-                      Icons.play_arrow_rounded,
+                      (value.isPlaying &&
+                              value.currentSong.title == widget.song.title)
+                          ? Icons.pause_sharp
+                          : Icons.play_arrow_rounded,
                       size: 64,
                     ),
                   ),

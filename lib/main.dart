@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:songsapp/engine/audioplayer_provider.dart';
 import 'package:songsapp/screens/home.dart';
-import 'package:songsapp/screens/yearlytopicscreen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+        create: (context) => AudioPlayerProvider(), child: const MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
