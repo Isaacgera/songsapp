@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:songsapp/engine/audioplayer_provider.dart';
 import 'package:songsapp/screens/home.dart';
-import 'package:songsapp/screens/magazinescreen.dart';
 
 void main() {
   runApp(

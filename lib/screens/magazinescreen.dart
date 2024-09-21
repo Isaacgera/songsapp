@@ -2,10 +2,26 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:http/http.dart' as http;
+import 'package:permission_handler/permission_handler.dart';
+import 'package:songsapp/engine/download_dialog.dart';
 
-class MagazinePage extends StatelessWidget {
+class MagazinePage extends StatefulWidget {
   const MagazinePage({super.key});
+  @override
+  State<MagazinePage> createState() => _MagazinePageState();
+
+  static Future<bool> _permissionRequest() async {
+    PermissionStatus result;
+    result = await Permission.storage.request();
+    if (result.isGranted) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+class _MagazinePageState extends State<MagazinePage> {
   @override
   Widget build(BuildContext context) {
     int currentYear = DateTime.now().year;
@@ -24,25 +40,6 @@ class MagazinePage extends StatelessWidget {
       'November',
       'December',
     ];
-
-    //methods
-    Future<void> downloadFile(String url, String filename) async {
-      final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/$filename');
-
-      final response = await http.get(Uri.parse(url));
-
-      if (response.statusCode == 200) {
-        final bytes = response.bodyBytes;
-
-        await file.create();
-        await file.writeAsBytes(bytes);
-
-        print('File downloaded successfully');
-      } else {
-        print('Failed to download file');
-      }
-    }
 
     return Scaffold(
         appBar: AppBar(
@@ -92,10 +89,22 @@ class MagazinePage extends StatelessWidget {
                     height: 20,
                   ),
                   GestureDetector(
-                    onTap: () {
-                      downloadFile(
-                          "https://github.com/JesusImmanuel/Magazine-App/blob/main/main.pdf",
-                          "Magazine-${monthNames[currentMonth - 1]} $currentYear.pdf");
+                    onTap: () async {
+                      bool result = await MagazinePage._permissionRequest();
+                      if (result) {
+                        Future.delayed(Duration.zero, () {
+                          if (mounted) {
+                            showDialog(
+                              context: context,
+                              builder: (dialogcontext) {
+                                return const DownloadProgressDialog();
+                              },
+                            );
+                          }
+                        });
+                      } else {
+                        print("No permission to read and write.");
+                      }
                     },
                     child: Container(
                       width: 250,
