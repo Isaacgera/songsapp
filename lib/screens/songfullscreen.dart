@@ -23,7 +23,8 @@ class _SongFullPageState extends State<SongFullPage> {
   String formatTime(Duration duration) {
     String twoDigitSec =
         duration.inSeconds.remainder(60).toString().padLeft(2, '0');
-    String formatTime = "${duration.inMinutes}:$twoDigitSec";
+    String twoDigitMin = duration.inMinutes.toString().padLeft(2, '0');
+    String formatTime = "$twoDigitMin:$twoDigitSec";
     return formatTime;
   }
 

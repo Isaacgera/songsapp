@@ -18,7 +18,7 @@ class DrawerTile extends StatelessWidget {
     return ListTile(
       title: Row(
         children: [
-          Icon(icon, size: 24, color: Colors.blue),
+          Icon(icon, size: 28, color: Colors.black54),
           const SizedBox(width: 16),
           Text(
             title,
@@ -30,10 +30,6 @@ class DrawerTile extends StatelessWidget {
       ),
       onTap: onTap,
       contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
-      //tileColor: Colors.blue[100],
     );
   }
 }

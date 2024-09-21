@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:songsapp/screens/aboutscreen.dart';
+import 'package:songsapp/screens/magazinescreen.dart';
 import 'package:songsapp/screens/yearlytopicscreen.dart';
 import 'package:songsapp/widgets/drawercard.dart';
 
@@ -10,6 +11,10 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
+      ),
+      width: 250,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,9 +27,12 @@ class MyDrawer extends StatelessWidget {
                 ),
                 CircleAvatar(
                   radius: 50,
-                  backgroundColor: Colors.white,
+                  backgroundColor: Colors.black45,
                   child: Image.asset('assets/imgs/logo.png',
                       height: 90, fit: BoxFit.cover),
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 Expanded(
                   child: ListView(
@@ -63,6 +71,17 @@ class MyDrawer extends StatelessWidget {
                                       const YearlyTopicsPage()));
                         },
                         icon: Icons.table_rows_sharp,
+                      ),
+                      DrawerTile(
+                        title: "Magazine",
+                        onTap: () {
+                          Navigator.pop(context);
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const MagazinePage()));
+                        },
+                        icon: Icons.download_rounded,
                       ),
                       DrawerTile(
                         title: "About Us",
