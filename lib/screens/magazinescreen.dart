@@ -1,7 +1,5 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:songsapp/engine/download_dialog.dart';
 
@@ -57,7 +55,7 @@ class _MagazinePageState extends State<MagazinePage> {
           child: Container(
               width: 700,
               height: 200,
-              margin: const EdgeInsets.all(8),
+              margin: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 color: Colors.black12,
                 borderRadius: BorderRadius.circular(8),

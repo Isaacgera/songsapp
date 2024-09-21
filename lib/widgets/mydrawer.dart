@@ -14,7 +14,7 @@ class MyDrawer extends StatelessWidget {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.zero,
       ),
-      width: 250,
+      width: 230,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
