@@ -27,7 +27,7 @@ class FileDownload {
 
   void startDownloading(BuildContext context, final Function okCallback) async {
     String baseUrl =
-        "https://github.com/JesusImmanuel/Magazine-App/blob/main/main.pdf";
+        "http://3.7.73.205/main.pdf";
     String fileName =
         "Magazine_${monthNames[currentMonth - 1]}_$currentYear.pdf";
 
