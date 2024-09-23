@@ -44,7 +44,7 @@ class _DownloadProgressDialogState extends State<DownloadProgressDialog> {
           value: progress,
           backgroundColor: Colors.grey,
           color: Colors.green,
-          minHeight: 10,
+          minHeight: 5,
         ),
         Align(
           alignment: Alignment.bottomRight,

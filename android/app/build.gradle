@@ -24,9 +24,11 @@ if (flutterVersionName == null) {
 }
 
 android {
+    compileSdkVersion 33
     namespace = "com.example.songsapp"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -34,6 +36,8 @@ android {
     }
 
     defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.songsapp"
         // You can update the following values to match your application needs.

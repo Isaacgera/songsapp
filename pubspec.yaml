@@ -41,6 +41,7 @@ dependencies:
   dio:
   permission_handler:
   path_provider:
+  device_info_plus:
 
 dev_dependencies:
   flutter_test:

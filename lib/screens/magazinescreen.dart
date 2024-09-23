@@ -1,3 +1,4 @@
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -8,13 +9,26 @@ class MagazinePage extends StatefulWidget {
   @override
   State<MagazinePage> createState() => _MagazinePageState();
 
-  static Future<bool> _permissionRequest() async {
-    PermissionStatus result;
-    result = await Permission.storage.request();
-    if (result.isGranted) {
-      return true;
+  static Future<bool> _permissionRequest(Permission permission) async {
+    AndroidDeviceInfo build = await DeviceInfoPlugin().androidInfo;
+    if (build.version.sdkInt >= 30) {
+      var res = await Permission.manageExternalStorage.request();
+      if (res.isGranted) {
+        return true;
+      } else {
+        return false;
+      }
     } else {
-      return false;
+      if (await permission.isGranted) {
+        return true;
+      } else {
+        var res = await permission.request();
+        if (res.isGranted) {
+          return true;
+        } else {
+          return false;
+        }
+      }
     }
   }
 }
@@ -88,9 +102,10 @@ class _MagazinePageState extends State<MagazinePage> {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      bool result = await MagazinePage._permissionRequest();
+                      bool result = await MagazinePage._permissionRequest(
+                          Permission.storage);
                       if (result) {
-                        Future.delayed(Duration.zero, () {
+                        Future.delayed(const Duration(milliseconds: 500), () {
                           if (mounted) {
                             showDialog(
                               context: context,
