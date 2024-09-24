@@ -7,7 +7,7 @@ class AudioPlayerProvider extends ChangeNotifier {
   int? _currentSongIndex;
   late List<Song> _allSongs = [];
   Song _currentSong = const Song(
-      title: "none", subtitle: "none", audiopath: "none", lyricspath: "none");
+      title: "Title", subtitle: "SubTitle", audiopath: "", lyricspath: "");
 
   // GETTERs
   int? get currentSongIndex => _currentSongIndex;

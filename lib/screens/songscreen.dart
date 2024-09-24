@@ -48,8 +48,7 @@ class _SongsPageState extends State<SongsPage> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>
-                              SongFullPage(song: widget.songs[index])));
+                          builder: (context) => const SongFullPage()));
                 },
                 child: SongCard(song: widget.songs[index], index: index))),
       ),

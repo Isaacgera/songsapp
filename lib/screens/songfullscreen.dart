@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:songsapp/engine/audioplayer_provider.dart';
-import 'package:songsapp/models/song.dart';
 import 'package:songsapp/widgets/lyricscard.dart';
 
 class SongFullPage extends StatefulWidget {
-  const SongFullPage({super.key, required this.song});
-  final Song song;
+  const SongFullPage({super.key});
 
   @override
   State<SongFullPage> createState() => _SongFullPageState();
@@ -71,7 +69,7 @@ class _SongFullPageState extends State<SongFullPage> {
                       width: 300,
                       child: Text(
                         overflow: TextOverflow.ellipsis,
-                        widget.song.title,
+                        value.currentSong.title,
                         style: GoogleFonts.inconsolata(
                           fontSize: 24,
                         ),
@@ -82,7 +80,7 @@ class _SongFullPageState extends State<SongFullPage> {
                       width: 300,
                       child: Text(
                         overflow: TextOverflow.ellipsis,
-                        widget.song.subtitle,
+                        value.currentSong.subtitle,
                         style: GoogleFonts.inconsolata(
                           fontSize: 14,
                         ),
@@ -166,15 +164,6 @@ class _SongFullPageState extends State<SongFullPage> {
                           IconButton(
                               onPressed: () {
                                 value.playPreviousSong();
-                                if (value.currentSong != widget.song) {
-                                  Navigator.pushReplacement<void, void>(
-                                    context,
-                                    MaterialPageRoute<void>(
-                                      builder: (BuildContext context) =>
-                                          SongFullPage(song: value.currentSong),
-                                    ),
-                                  );
-                                }
                               },
                               icon: const Icon(Icons.skip_previous_rounded,
                                   size: 50)),
@@ -190,13 +179,6 @@ class _SongFullPageState extends State<SongFullPage> {
                           IconButton(
                               onPressed: () {
                                 value.playNextSong();
-                                Navigator.pushReplacement<void, void>(
-                                  context,
-                                  MaterialPageRoute<void>(
-                                    builder: (BuildContext context) =>
-                                        SongFullPage(song: value.currentSong),
-                                  ),
-                                );
                               },
                               icon: const Icon(Icons.skip_next_rounded,
                                   size: 50)),
@@ -213,7 +195,8 @@ class _SongFullPageState extends State<SongFullPage> {
               //Lyrics
 
               LyricsCard(
-                  title: widget.song.title, lyricsPath: widget.song.lyricspath)
+                  title: value.currentSong.title,
+                  lyricsPath: value.currentSong.lyricspath)
             ],
           ),
         ),

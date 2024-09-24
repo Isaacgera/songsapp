@@ -49,7 +49,7 @@ class BookCard extends StatelessWidget {
                     ),
                     Transform(
                       transform: Matrix4.translationValues(
-                          0, -4, 0), // adjust the y-offset
+                          0, 0, 0), // adjust the y-offset
                       child: Text(
                         book.subtitle,
                         style: GoogleFonts.inconsolata(fontSize: 12),

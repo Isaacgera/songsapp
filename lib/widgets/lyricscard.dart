@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 class LyricsCard extends StatefulWidget {
   final String lyricsPath;
   final String title;
+
   const LyricsCard({super.key, required this.title, required this.lyricsPath});
 
   @override
@@ -12,19 +13,26 @@ class LyricsCard extends StatefulWidget {
 }
 
 class _LyricsCardState extends State<LyricsCard> {
-  String _fileContent = '';
+  String _fileContent = 'Loading...';
   double _fontSize = 14;
-
-  void update() {
-    setState(() {
-      _fontSize;
-    });
-  }
 
   @override
   void initState() {
     super.initState();
-    _loadFileContent(widget.lyricsPath);
+    // If the lyricsPath is provided initially, load the content
+    if (widget.lyricsPath.isNotEmpty) {
+      _loadFileContent(widget.lyricsPath);
+    }
+  }
+
+  @override
+  void didUpdateWidget(LyricsCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Check if the lyricsPath has changed, and reload the file if necessary
+    if (widget.lyricsPath != oldWidget.lyricsPath &&
+        widget.lyricsPath.isNotEmpty) {
+      _loadFileContent(widget.lyricsPath);
+    }
   }
 
   Future<void> _loadFileContent(String lyricsPath) async {
@@ -36,7 +44,7 @@ class _LyricsCardState extends State<LyricsCard> {
     } catch (e) {
       print('Error loading file: $e');
       setState(() {
-        _fileContent = 'Error loading file';
+        _fileContent = 'Error loading lyrics';
       });
     }
   }
@@ -44,99 +52,100 @@ class _LyricsCardState extends State<LyricsCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.all(25),
-        width: 700,
-        decoration: const BoxDecoration(
-          color: Colors.black12,
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-        ),
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      overflow: TextOverflow.ellipsis,
-                      widget.title,
-                      style: GoogleFonts.inconsolata(
-                        fontSize: 18,
-                      ),
+      margin: const EdgeInsets.all(25),
+      width: 700,
+      decoration: const BoxDecoration(
+        color: Colors.black12,
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+      ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    overflow: TextOverflow.ellipsis,
+                    widget.title,
+                    style: GoogleFonts.inconsolata(
+                      fontSize: 18,
                     ),
                   ),
-                  Row(
-                    children: [
-                      GestureDetector(
-                        onTap: () {
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
                           _fontSize = 14;
-                          update();
-                        },
-                        child: Container(
-                          height: 30,
-                          width: 30,
-                          alignment: Alignment.center,
-                          child: const Text(
-                            "Aa",
-                            style: TextStyle(
-                              fontSize: 12,
-                            ),
+                        });
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        alignment: Alignment.center,
+                        child: const Text(
+                          "Aa",
+                          style: TextStyle(
+                            fontSize: 12,
                           ),
                         ),
                       ),
-                      GestureDetector(
-                        onTap: () {
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
                           _fontSize = 18;
-                          update();
-                        },
-                        child: Container(
-                          height: 30,
-                          width: 30,
-                          alignment: Alignment.center,
-                          child: const Text(
-                            "Aa",
-                            style: TextStyle(
-                              fontSize: 15,
-                            ),
+                        });
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        alignment: Alignment.center,
+                        child: const Text(
+                          "Aa",
+                          style: TextStyle(
+                            fontSize: 15,
                           ),
                         ),
                       ),
-                      GestureDetector(
-                        onTap: () {
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
                           _fontSize = 22;
-                          update();
-                        },
-                        child: Container(
-                          height: 30,
-                          width: 30,
-                          alignment: Alignment.center,
-                          child: const Text(
-                            "Aa",
-                            style: TextStyle(
-                              fontSize: 20,
-                            ),
+                        });
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        alignment: Alignment.center,
+                        child: const Text(
+                          "Aa",
+                          style: TextStyle(
+                            fontSize: 20,
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: const EdgeInsets.all(10),
+            child: Text(
+              _fileContent,
+              style: TextStyle(
+                fontSize: _fontSize,
               ),
             ),
-            Container(
-                alignment: Alignment.centerLeft,
-                margin: const EdgeInsets.all(10),
-                child: Text(
-                  (widget.lyricsPath == "none")
-                      ? "Comming Soon..\n\n"
-                      : _fileContent,
-                  style: TextStyle(
-                    fontSize: _fontSize,
-                  ),
-                ))
-          ],
-        ));
+          ),
+        ],
+      ),
+    );
   }
 }
-
-// Text((lyricsPath == "none") ? "Comming Soon" : "la lala laa"));
