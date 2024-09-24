@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 4000), () {
+    Future.delayed(const Duration(milliseconds: 3000), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -32,9 +32,9 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             //app logo
             Image.asset(
-              'imgs/logo.png',
-              cacheHeight: 180,
-              cacheWidth: 240,
+              'assets/imgs/scrlogo.jpeg',
+              cacheHeight: 300,
+              cacheWidth: 350,
             ),
           ],
         ),

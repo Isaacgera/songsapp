@@ -42,6 +42,7 @@ dependencies:
   permission_handler:
   path_provider:
   device_info_plus:
+  flutter_local_notifications:
 
 dev_dependencies:
   flutter_test:
