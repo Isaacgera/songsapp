@@ -14,12 +14,6 @@ class SongFullPage extends StatefulWidget {
 }
 
 class _SongFullPageState extends State<SongFullPage> {
-  // @override
-  // void setState(VoidCallback fn) {
-  //   // TODO: implement setState
-  //   super.setState(fn);
-  // }
-
   String formatTime(Duration duration) {
     String twoDigitSec =
         duration.inSeconds.remainder(60).toString().padLeft(2, '0');

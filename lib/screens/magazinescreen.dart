@@ -100,8 +100,8 @@ class _MagazinePageState extends State<MagazinePage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  GestureDetector(
-                    onTap: () async {
+                  ElevatedButton.icon(
+                    onPressed: () async {
                       bool result = await MagazinePage._permissionRequest(
                           Permission.storage);
                       if (result) {
@@ -119,29 +119,25 @@ class _MagazinePageState extends State<MagazinePage> {
                         print("No permission to read and write.");
                       }
                     },
-                    child: Container(
-                      width: 250,
-                      padding: const EdgeInsets.all(6),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        color: Colors.blue[200],
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Icon(Icons.download_rounded,
-                              size: 28, color: Colors.black54),
-                          const SizedBox(width: 16),
-                          Text(
-                            "Download Now",
-                            style: GoogleFonts.inconsolata(
-                              fontSize: 22,
-                            ),
-                          ),
-                        ],
+                    icon: const Icon(Icons.download_rounded),
+                    label: Text(
+                      "Download Now",
+                      style: GoogleFonts.inconsolata(
+                        fontSize: 20,
                       ),
                     ),
-                  ),
+                    style: ElevatedButton.styleFrom(
+                      // Background color
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.black54,
+
+                      // Border radius (default: 4)
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(8), // Reduce border radius
+                      ),
+                    ),
+                  )
                 ],
               )),
         ));
