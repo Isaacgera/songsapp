@@ -1,7 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
+
 
 class NotificationProvider {
   late FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
@@ -19,8 +23,32 @@ class NotificationProvider {
     await flutterLocalNotificationsPlugin.initialize(initializationSettings);
 
     tz.initializeTimeZones();
+
+    // Check for Android 13+ notification permission
+    if (Platform.isAndroid && (await _checkNotificationPermission()) != true) {
+      await _requestNotificationPermission();
+    }
+
+    // Check for Notification permission status
+  
+
+  }
+Future<bool> _checkNotificationPermission() async {
+    if (Platform.isAndroid && (await Permission.notification.isGranted)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
+  // Request Notification permission
+  Future<void> _requestNotificationPermission() async {
+    if (Platform.isAndroid && (await Permission.notification.request().isGranted)) {
+      print('Notification permission granted.');
+    } else {
+      print('Notification permission denied.');
+    }
+  }
   Future<void> scheduleMultipleNotifications() async {
     List<Map<String, dynamic>> notificationSchedules = [
       {
@@ -37,13 +65,13 @@ class NotificationProvider {
       },
       {
         'id': 3,
-        'time': const TimeOfDay(hour: 14, minute: 0),
+        'time': const TimeOfDay(hour: 15, minute: 0),
         'message':
             "Prayer is talking with God. Lord's waiting to hear from you. \nప్రార్థన అంటే దేవునితో మాట్లాడటం. ప్రభువు మీ నుండి వినడానికి వేచి ఉన్నారు."
       },
       {
         'id': 4,
-        'time': const TimeOfDay(hour: 20, minute: 0),
+        'time': const TimeOfDay(hour: 21, minute: 0),
         'message':
             "Share God's love with those you love. Family devotion time! \nమీరు ప్రేమించే వారితో దేవుని వాక్యాన్ని పంచుకోండి. కుటుంబ ఆరాధన సమయం!"
       },
@@ -95,5 +123,27 @@ class NotificationProvider {
     }
 
     return scheduledDate;
+  }
+
+  // Method to trigger a notification immediately with a download message
+  Future<void> downloadNotifier() async {
+    var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
+      'download_notification_channel_id',
+      'Download Notifications',
+      channelDescription: 'Notifications related to download events',
+      importance: Importance.max,
+      priority: Priority.high,
+    );
+    var platformChannelSpecifics = NotificationDetails(
+      android: androidPlatformChannelSpecifics,
+    );
+
+    await flutterLocalNotificationsPlugin.show(
+      100, // Unique ID for this notification
+      'Download Completed',
+      'Your file has been successfully downloaded!',
+      platformChannelSpecifics,
+      payload: 'download_payload',
+    );
   }
 }

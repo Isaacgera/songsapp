@@ -30,7 +30,7 @@ class _DownloadProgressDialogState extends State<DownloadProgressDialog> {
   Widget build(BuildContext context) {
     String downloadingProgress = (progress * 100).toInt().toString();
     return AlertDialog(
-        backgroundColor: Colors.black12,
+        backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
