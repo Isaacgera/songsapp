@@ -27,8 +27,7 @@ class FileDownload {
   ];
 
   void startDownloading(BuildContext context, final Function okCallback) async {
-    String baseUrl =
-        "http://3.7.73.205/main.pdf";
+    String baseUrl = "http://3.7.73.205/main.pdf";
     String fileName =
         "Magazine_${monthNames[currentMonth - 1]}_$currentYear.pdf";
 
@@ -51,7 +50,7 @@ class FileDownload {
 
     if (isSuccess) {
       NotificationProvider np = NotificationProvider();
-      np.downloadNotifier();
+      np.downloadNotifier(fileName);
       Navigator.pop(context);
     }
   }

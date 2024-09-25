@@ -6,14 +6,9 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 
-
 class NotificationProvider {
-  late FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
-
-  NotificationProvider() {
-    flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-  }
-
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
   Future<void> init() async {
     var initializationSettingsAndroid =
         const AndroidInitializationSettings('@mipmap/ic_launcher');
@@ -27,13 +22,16 @@ class NotificationProvider {
     // Check for Android 13+ notification permission
     if (Platform.isAndroid && (await _checkNotificationPermission()) != true) {
       await _requestNotificationPermission();
+      await flutterLocalNotificationsPlugin
+          .resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>()!
+          .requestNotificationsPermission();
     }
 
     // Check for Notification permission status
-  
-
   }
-Future<bool> _checkNotificationPermission() async {
+
+  Future<bool> _checkNotificationPermission() async {
     if (Platform.isAndroid && (await Permission.notification.isGranted)) {
       return true;
     } else {
@@ -41,14 +39,23 @@ Future<bool> _checkNotificationPermission() async {
     }
   }
 
-  // Request Notification permission
+  // Request Notification permiss
+
   Future<void> _requestNotificationPermission() async {
-    if (Platform.isAndroid && (await Permission.notification.request().isGranted)) {
+    final AndroidFlutterLocalNotificationsPlugin? androidImplementation =
+        flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>();
+    final bool? grantedNotificationPermission =
+        await androidImplementation?.requestNotificationsPermission();
+    if (Platform.isAndroid &&
+        (await Permission.notification.request().isGranted) &&
+        grantedNotificationPermission!) {
       print('Notification permission granted.');
     } else {
       print('Notification permission denied.');
     }
   }
+
   Future<void> scheduleMultipleNotifications() async {
     List<Map<String, dynamic>> notificationSchedules = [
       {
@@ -110,6 +117,7 @@ Future<bool> _checkNotificationPermission() async {
       matchDateTimeComponents: DateTimeComponents.time,
       uiLocalNotificationDateInterpretation:
           UILocalNotificationDateInterpretation.absoluteTime,
+      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
     );
   }
 
@@ -126,7 +134,7 @@ Future<bool> _checkNotificationPermission() async {
   }
 
   // Method to trigger a notification immediately with a download message
-  Future<void> downloadNotifier() async {
+  Future<void> downloadNotifier(String fileName) async {
     var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
       'download_notification_channel_id',
       'Download Notifications',
@@ -141,7 +149,7 @@ Future<bool> _checkNotificationPermission() async {
     await flutterLocalNotificationsPlugin.show(
       100, // Unique ID for this notification
       'Download Completed',
-      'Your file has been successfully downloaded!',
+      '$fileName been successfully downloaded!',
       platformChannelSpecifics,
       payload: 'download_payload',
     );
