@@ -83,7 +83,7 @@ class NotificationProvider {
       },
       {
         'id': 4,
-        'time': const TimeOfDay(hour: 12, minute: 54),
+        'time': const TimeOfDay(hour: 20, minute: 0),
         'message':
             "Share God's love with those you love. Family devotion time! \nమీరు ప్రేమించే వారితో దేవుని వాక్యాన్ని పంచుకోండి. కుటుంబ ఆరాధన సమయం!"
       },
