@@ -18,6 +18,7 @@ class NotificationProvider {
     await flutterLocalNotificationsPlugin.initialize(initializationSettings);
 
     tz.initializeTimeZones();
+    tz.setLocalLocation(tz.getLocation('Asia/Kolkata')); // Set appropriate timezone for your app
 
     // Check for Android 13+ notification permission
     if (Platform.isAndroid && (await _checkNotificationPermission()) != true) {
@@ -78,7 +79,7 @@ class NotificationProvider {
       },
       {
         'id': 4,
-        'time': const TimeOfDay(hour: 21, minute: 0),
+        'time': const TimeOfDay(hour: 20, minute: 0),
         'message':
             "Share God's love with those you love. Family devotion time! \nమీరు ప్రేమించే వారితో దేవుని వాక్యాన్ని పంచుకోండి. కుటుంబ ఆరాధన సమయం!"
       },

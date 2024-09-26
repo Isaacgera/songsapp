@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Songs App',
+      title: 'Prayer Fellowship',
       theme: ThemeData(
         useMaterial3: true,
       ),

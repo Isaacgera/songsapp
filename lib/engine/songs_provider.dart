@@ -21,6 +21,7 @@ class SongsProvider {
     title: bookprovider.b26.title,
     subtitle: bookprovider.b26.subtitle,
     audiopath: "audios/album1/2.mp3",
+    // audiopath: "http://3.7.73.205/main.mp3",
     lyricspath: bookprovider.b26.lyricspath,
   );
   //34
