@@ -1,37 +1,42 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
+import 'package:open_file/open_file.dart';
 
 class NotificationProvider {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
+
   Future<void> init() async {
+    // Initialize notification settings for Android
     var initializationSettingsAndroid =
         const AndroidInitializationSettings('@mipmap/ic_launcher');
     var initializationSettings =
         InitializationSettings(android: initializationSettingsAndroid);
 
-    await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+    // Initialize plugin
+    await flutterLocalNotificationsPlugin.initialize(
+  initializationSettings,
+  onDidReceiveNotificationResponse: (NotificationResponse notificationResponse) async {
+    _onSelectNotification(notificationResponse.payload);
+  },
+);
 
+
+    // Initialize time zones
     tz.initializeTimeZones();
-    tz.setLocalLocation(tz.getLocation('Asia/Kolkata')); // Set appropriate timezone for your app
+    tz.setLocalLocation(tz.getLocation('Asia/Kolkata')); // Set appropriate timezone
 
-    // Check for Android 13+ notification permission
+    // Check and request Android 13+ notification permission
     if (Platform.isAndroid && (await _checkNotificationPermission()) != true) {
       await _requestNotificationPermission();
-      await flutterLocalNotificationsPlugin
-          .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin>()!
-          .requestNotificationsPermission();
     }
-
-    // Check for Notification permission status
   }
 
+  // Check if notification permission is granted
   Future<bool> _checkNotificationPermission() async {
     if (Platform.isAndroid && (await Permission.notification.isGranted)) {
       return true;
@@ -40,8 +45,7 @@ class NotificationProvider {
     }
   }
 
-  // Request Notification permiss
-
+  // Request notification permission
   Future<void> _requestNotificationPermission() async {
     final AndroidFlutterLocalNotificationsPlugin? androidImplementation =
         flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<
@@ -57,6 +61,7 @@ class NotificationProvider {
     }
   }
 
+  // Schedule multiple notifications throughout the day
   Future<void> scheduleMultipleNotifications() async {
     List<Map<String, dynamic>> notificationSchedules = [
       {
@@ -95,6 +100,7 @@ class NotificationProvider {
     }
   }
 
+  // Schedule an individual notification
   Future<void> _scheduleNotification(
       int id, String title, String body, TimeOfDay time) async {
     var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
@@ -122,6 +128,7 @@ class NotificationProvider {
     );
   }
 
+  // Calculate the next instance of a given time
   tz.TZDateTime _nextInstanceOfTime(TimeOfDay time) {
     final tz.TZDateTime now = tz.TZDateTime.now(tz.local);
     tz.TZDateTime scheduledDate = tz.TZDateTime(
@@ -134,8 +141,8 @@ class NotificationProvider {
     return scheduledDate;
   }
 
-  // Method to trigger a notification immediately with a download message
-  Future<void> downloadNotifier(String fileName) async {
+  // Trigger a notification immediately with a download message
+  Future<void> downloadNotifier(String fileName, String absolutePath) async {
     var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
       'download_notification_channel_id',
       'Download Notifications',
@@ -150,9 +157,17 @@ class NotificationProvider {
     await flutterLocalNotificationsPlugin.show(
       100, // Unique ID for this notification
       'Download Completed',
-      '$fileName been successfully downloaded!',
+      '$fileName has been successfully downloaded!',
       platformChannelSpecifics,
-      payload: 'download_payload',
+      payload: absolutePath, // Pass the absolute path as the payload
     );
   }
+
+  // Handle the notification click event
+  Future<void> _onSelectNotification(String? payload) async {
+  if (payload != null && payload.isNotEmpty) {
+    // Open the file when the notification is clicked
+    OpenFile.open(payload,type: "application/pdf"); // Use the 'open_file' package to open the file
+  }
+}
 }

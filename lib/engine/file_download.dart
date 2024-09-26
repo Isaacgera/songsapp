@@ -50,7 +50,7 @@ class FileDownload {
 
     if (isSuccess) {
       NotificationProvider np = NotificationProvider();
-      np.downloadNotifier(fileName);
+      np.downloadNotifier(fileName,"/storage/emulated/0/Download/$fileName");
       Navigator.pop(context);
     }
   }
