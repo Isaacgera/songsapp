@@ -19,12 +19,11 @@ class NotificationProvider {
 
     // Initialize plugin
     await flutterLocalNotificationsPlugin.initialize(
-  initializationSettings,
-  onDidReceiveNotificationResponse: (NotificationResponse notificationResponse) async {
-    _onSelectNotification(notificationResponse.payload);
-  },
-);
-
+      initializationSettings,
+      onDidReceiveNotificationResponse: (NotificationResponse notificationResponse) async {
+        _onSelectNotification(notificationResponse.payload);
+      },
+    );
 
     // Initialize time zones
     tz.initializeTimeZones();
@@ -84,7 +83,7 @@ class NotificationProvider {
       },
       {
         'id': 4,
-        'time': const TimeOfDay(hour: 20, minute: 0),
+        'time': const TimeOfDay(hour: 12, minute: 54),
         'message':
             "Share God's love with those you love. Family devotion time! \nమీరు ప్రేమించే వారితో దేవుని వాక్యాన్ని పంచుకోండి. కుటుంబ ఆరాధన సమయం!"
       },
@@ -100,15 +99,20 @@ class NotificationProvider {
     }
   }
 
-  // Schedule an individual notification
+  // Schedule an individual notification with BigTextStyle for long messages
   Future<void> _scheduleNotification(
       int id, String title, String body, TimeOfDay time) async {
-    var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
+    var androidPlatformChannelSpecifics = AndroidNotificationDetails(
       'daily_notification_channel_id',
       'Daily Notifications',
       channelDescription: 'Notifications scheduled throughout the day',
       importance: Importance.max,
       priority: Priority.high,
+      styleInformation: BigTextStyleInformation(
+        body, // Use BigTextStyleInformation for long notification text
+        contentTitle: title,
+        summaryText: 'Prayer Fellowship',
+      ),
     );
     var platformChannelSpecifics = NotificationDetails(
       android: androidPlatformChannelSpecifics,
@@ -141,14 +145,19 @@ class NotificationProvider {
     return scheduledDate;
   }
 
-  // Trigger a notification immediately with a download message
+  // Trigger a notification immediately with BigTextStyle for long download message
   Future<void> downloadNotifier(String fileName, String absolutePath) async {
-    var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
+    var androidPlatformChannelSpecifics = AndroidNotificationDetails(
       'download_notification_channel_id',
       'Download Notifications',
       channelDescription: 'Notifications related to download events',
       importance: Importance.max,
       priority: Priority.high,
+      styleInformation: BigTextStyleInformation(
+        '$fileName has been successfully downloaded!', // Long text
+        contentTitle: 'Download Completed',
+        summaryText: 'Tap to open the file',
+      ),
     );
     var platformChannelSpecifics = NotificationDetails(
       android: androidPlatformChannelSpecifics,
@@ -165,9 +174,9 @@ class NotificationProvider {
 
   // Handle the notification click event
   Future<void> _onSelectNotification(String? payload) async {
-  if (payload != null && payload.isNotEmpty) {
-    // Open the file when the notification is clicked
-    OpenFile.open(payload,type: "application/pdf"); // Use the 'open_file' package to open the file
+    if (payload != null && payload.isNotEmpty) {
+      // Open the file when the notification is clicked
+      OpenFile.open(payload, type: "application/pdf"); // Use the 'open_file' package to open the file
+    }
   }
-}
 }
