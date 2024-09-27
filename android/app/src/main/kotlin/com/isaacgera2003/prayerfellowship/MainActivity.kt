@@ -1,4 +1,4 @@
-package com.example.songsapp
+package com.isaacgera2003.prayerfellowship
 
 import io.flutter.embedding.android.FlutterActivity
 
