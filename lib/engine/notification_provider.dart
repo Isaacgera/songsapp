@@ -111,7 +111,7 @@ class NotificationProvider {
       styleInformation: BigTextStyleInformation(
         body, // Use BigTextStyleInformation for long notification text
         contentTitle: title,
-        summaryText: 'Prayer Fellowship',
+        summaryText: 'Spiritual Alert!',
       ),
     );
     var platformChannelSpecifics = NotificationDetails(
